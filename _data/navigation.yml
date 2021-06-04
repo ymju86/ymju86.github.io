@@ -4,12 +4,12 @@ main:
   #  url: /about/
   - title: "Portfolio"
     url: /portfolio/
-  - title: "Data Science Projects"
-    url: /data-wrangling/
+  #- title: "Data Science Projects"
+  #  url: /data-wrangling/
   - title: "Publications"
     url: /publications/
   - title: "CV"
-    url: /cv/
+    url: /assets/Resume_Youngmin_Ju_June_2021.pdf
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
