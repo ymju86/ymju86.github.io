@@ -56,7 +56,7 @@ Lee W.H., K.H. Park, **Y.M. Ju**, S.J. Kim and D.S. Lee. (2013), A Study on Scal
 (2020) Online Retail Project, [kaggle online retail data](https://github.com/ymju86/Online_Retail_Project)
 - Segmented and cleaned business performance metrics: Monthly Revenue, Activation Rate, Monthly Retention Rate, Churn Rate
 - Conducted Life Time Value (LTV) methods and increased accuracy of a multi-classification model from 76.5% to 84% with XGBoost
-- 
+ 
 --------------------------------------------------------------------------------------
 
 (Jan. 2012 – Dec. 2012)  A Study on the Estimation of Optimal Defense R&D Expenditure and Efficient Management, Korea Army Academy at Yeongcheon (KAAY)
