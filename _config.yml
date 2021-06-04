@@ -135,6 +135,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ymju86"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/youngmin-ju/"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
