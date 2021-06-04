@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "Youngmin Ju"
 title_separator          : "-"
-subtitle                 : "Economist | Data Scientist | Ph.D. in Economics" # site tagline that appears below site title in masthead
+subtitle                 : # "Economist | Data Scientist | Ph.D. in Economics" # site tagline that appears below site title in masthead
 name                     : "Youngmin Ju"
 description              : 
 url                      : "youngminju.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -96,10 +96,11 @@ analytics:
 author:
   name             : "Youngmin Ju"
   avatar           : "/assets/images/bio-photo.png"
-  bio              : "I am a growth-focused and meticulous professional passionate about using econometrics, statistics, and algorithms to extract knowledge and insights from structured and unstructured data.
-I am adept at econometrics, statistics, causal inference, machine learning, predictive analytics, and experimental design.
-I have a strong focus on making my models implementable at scale in languages like Python and R.
-"
+  bio              : "Economist / Data Scientist
+  PhD in Economics @ USC
+  MS in Economics @ Korea Univ.
+  BS in Mathmatical Sciences @ KAIST
+  First Lieutenant @ ROKA"
   location         : "Los Angeles"
   email            : "ymju86@gmail.com"
   links:
