@@ -12,6 +12,8 @@ header:
 
 ## PUBLISHED PAPERS (SCI/SSCI-LISTED):
 
+--------------------------------------------------------------------------------------
+
 **Ju, Y.-M.** and Lee, M.-J. (2017), Control Function Approach for Partly Ordered Endogenous Treatments: Military Rank Premium in Wage. Oxf Bull Econ Stat, 79: 1176-1194. doi: [10.1111/obes.12199](https://doi.org/10.1111/obes.12199)
 
 ### Abstract
@@ -22,12 +24,16 @@ In treatment effect analysis, there are many cases where the treatment of intere
 
 ## PUBLISHED PAPERS (Non-SCI/SSCI-LISTED):
 
+--------------------------------------------------------------------------------------
+
 Lee W.H., K.H. Park, **Y.M. Ju**, S.J. Kim and D.S. Lee. (2013), A Study on Scale of Defense Expenditure for Security Menace: A Panel Regression Analysis Approach, Journal of Korea Army Academy at Yeong-cheon, 76(1), 207-242 (in Korean)
 
 --------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------
 
 ## RESEARCH PROJECTS:
+
+--------------------------------------------------------------------------------------
 
 (2021) Affirmative Action in Korea - Regression Discontinuity with Multiple Assignment Variables
 - Developed identification and estimation of an extended version of regression discontinuity design that uses more than one assignment variable
