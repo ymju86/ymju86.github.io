@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Youngmin Ju's Data Science Blog"
+title                    : "Youngmin Ju"
 title_separator          : "-"
 subtitle                 : "Economist | Data Scientist | Ph.D. in Economics" # site tagline that appears below site title in masthead
 name                     : "Youngmin Ju"
@@ -26,7 +26,7 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ymju86/ymju86.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "Youngmin Ju's Data Science Blog" # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "Youngmin Ju" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -95,8 +95,11 @@ analytics:
 # Site Author
 author:
   name             : "Youngmin Ju"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Economist | Data Scientist"
+  avatar           : "/assets/images/bio-photo.png"
+  bio              : "I am a growth-focused and meticulous professional passionate about using econometrics, statistics, and algorithms to extract knowledge and insights from structured and unstructured data.
+I am adept at econometrics, statistics, causal inference, machine learning, predictive analytics, and experimental design.
+I have a strong focus on making my models implementable at scale in languages like Python and R.
+"
   location         : "Los Angeles"
   email            : "ymju86@gmail.com"
   links:
