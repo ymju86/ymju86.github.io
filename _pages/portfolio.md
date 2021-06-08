@@ -95,6 +95,7 @@ Data fall under two categories:
 
 ### Categorical features
 
+#### Figure: this text is ignored {#referenceToFigure}
 ![alt text](/images/gender.png)
 ![alt text](/images/partner.png)
 ![alt text](/images/phone.png)
@@ -103,6 +104,8 @@ Data fall under two categories:
 Caption: This is my first figure. Hello!
 
 This chart reveals customers who have Fiber optic as Internet Service are more likely to churn.
+
+#### Figure: this text is ignored {#referenceToFigure}
 ![alt text](/images/online_security.png)
 ![alt text](/images/online_backup.png)
 ![alt text](/images/device_protection.png)
@@ -110,6 +113,8 @@ This chart reveals customers who have Fiber optic as Internet Service are more l
 Caption: This is my first figure. Hello!
 
 Customers don’t use Tech Support are more like to churn (~25% difference).
+
+#### Figure: this text is ignored {#referenceToFigure}
 ![alt text](/images/Streaming_TV.png)
 ![alt text](/images/Streaming_Movies.png)
 ![alt text](/images/contract.png)
