@@ -95,29 +95,29 @@ Data fall under two categories:
 
 ### Categorical features
 
-<div id="fig:coolFig">
-![alt text](/images/gender.png)
-![alt text](/images/partner.png)
-![alt text](/images/phone.png)
-![alt text](/images/multiple_lines.png)
-![alt text](/images/internet.png)
-Cool figure!
-</div>
-
+| `Gender` | `Partner` |
+| --- | --- |
+| ![alt text](/images/gender.png) | ![alt text](/images/partner.png) |
+| `Phone Service` | `Multiple Lines` |
+|![alt text](/images/phone.png)|![alt text](/images/multiple_lines.png)|
+| `Internet Service` | 
+|![alt text](/images/internet.png)|
+ 
 This chart reveals customers who have Fiber optic as Internet Service are more likely to churn.
-
-![alt text](/images/online_security.png)
-![alt text](/images/online_backup.png)
-![alt text](/images/device_protection.png)
-![alt text](/images/tech_support.png)
+| `Online Security` | `Online Backup` |
+| --- | --- |
+|![alt text](/images/online_security.png)|![alt text](/images/online_backup.png)|
+| `Device Protection` | `Tech Support` |
+|![alt text](/images/device_protection.png)|![alt text](/images/tech_support.png)|
 
 Customers don’t use Tech Support are more like to churn (~25% difference).
-
-![alt text](/images/Streaming_TV.png)
-![alt text](/images/Streaming_Movies.png)
-![alt text](/images/contract.png)
-![alt text](/images/Paperless.png)
-![alt text](/images/payment_methods.png)
+| `Streaming_TV` | `Streaming_Movies` |
+| --- | --- |
+|![alt text](/images/Streaming_TV.png)|![alt text](/images/Streaming_Movies.png)|
+| `Contract` | `Paperless` |
+|![alt text](/images/contract.png)|![alt text](/images/Paperless.png)|
+| `Payment_methods` | 
+|![alt text](/images/payment_methods.png)|
 
 Automating the payment makes the customer more likely to retain in your platform (~30% difference).
 
