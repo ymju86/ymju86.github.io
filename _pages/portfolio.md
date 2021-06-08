@@ -100,12 +100,14 @@ Data fall under two categories:
 ![alt text](/images/phone.png)
 ![alt text](/images/multiple_lines.png)
 ![alt text](/images/internet.png)
+Caption: This is my first figure. Hello!
 
 This chart reveals customers who have Fiber optic as Internet Service are more likely to churn.
 ![alt text](/images/online_security.png)
 ![alt text](/images/online_backup.png)
 ![alt text](/images/device_protection.png)
 ![alt text](/images/tech_support.png)
+Caption: This is my first figure. Hello!
 
 Customers don’t use Tech Support are more like to churn (~25% difference).
 ![alt text](/images/Streaming_TV.png)
@@ -113,6 +115,7 @@ Customers don’t use Tech Support are more like to churn (~25% difference).
 ![alt text](/images/contract.png)
 ![alt text](/images/Paperless.png)
 ![alt text](/images/payment_methods.png)
+Caption: This is my first figure. Hello!
 
 Automating the payment makes the customer more likely to retain in your platform (~30% difference).
 
