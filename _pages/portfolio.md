@@ -104,6 +104,7 @@ Data fall under two categories:
 |![alt text](/images/internet.png)|
  
 This chart reveals customers who have Fiber optic as Internet Service are more likely to churn.
+
 | `Online Security` | `Online Backup` |
 | --- | --- |
 |![alt text](/images/online_security.png)|![alt text](/images/online_backup.png)|
@@ -111,6 +112,7 @@ This chart reveals customers who have Fiber optic as Internet Service are more l
 |![alt text](/images/device_protection.png)|![alt text](/images/tech_support.png)|
 
 Customers don’t use Tech Support are more like to churn (~25% difference).
+
 | `Streaming_TV` | `Streaming_Movies` |
 | --- | --- |
 |![alt text](/images/Streaming_TV.png)|![alt text](/images/Streaming_Movies.png)|
