@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 toc_label: Contents
 header:
-  image: "/images/fort point.png"
+  image: "/images/waterfront.png"
 ---
 
 --------------------------------------------------------------------------------------
