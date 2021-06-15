@@ -1,5 +1,7 @@
 ---
 title: "Big Data Econometrics"
+header:
+  image: "/images/fort point.png"
 ---
 --------------------------------------------------------------------------------------
 Materials for TA session (update: March 15, 2021)  
