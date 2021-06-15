@@ -3,7 +3,7 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 header:
-  image: "/images/waterfront.png"
+  image: "/images/waterfront.jpg"
 ---
 
 
