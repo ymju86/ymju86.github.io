@@ -1,17 +1,5 @@
 ---
-toc: true
-layout: single
-permalink: /portfolio/
-title: "Portfolio"
-author_profile: true
-read_time: true
-comments: true
-share: true
-related: true
-popular: true
-toc: true
-toc_sticky: true
-toc_label: Contents
+title: "Online Retail Project"
 header:
   image: "/images/waterfront.jpg"
 ---
