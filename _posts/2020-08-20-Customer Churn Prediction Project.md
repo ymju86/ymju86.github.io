@@ -4,9 +4,9 @@ header:
   image: "/images/waterfront.jpg"
 ---
 
-# Customer Churn Prediction Project
 Data: [kaggle](https://www.kaggle.com/blastchar/telco-customer-churn)
 Github: [github](https://github.com/ymju86/Customer_Churn_Prediction_Project)
+
 - pandas, numpy, matplotlib, seaborn, plotly, sklearn, xgboost
 
 Develop a Churn Prediction model:

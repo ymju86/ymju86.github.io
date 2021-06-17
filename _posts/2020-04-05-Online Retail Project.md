@@ -4,9 +4,9 @@ header:
   image: "/images/waterfront.jpg"
 ---
 
-# Online Retail Project
 Data: [kaggle](https://www.kaggle.com/vijayuv/onlineretail)
 Github: [github](https://github.com/ymju86/Online_Retail_Project)
+
 - pandas, numpy, matplotlib, seaborn, plotly, sklearn(k-means clustering), elbow method, xgboost
 
 Metrics for Business
