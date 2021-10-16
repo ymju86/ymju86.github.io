@@ -24,8 +24,8 @@ header:
         var adobeDCView = new AdobeDC.View({clientId: "adb1cc4555b24d9c823f920fb2731dce", divId: "adobe-dc-view"});
         adobeDCView.previewFile(
        {
-          content:   {location: {url: "assets/Resume_Youngmin_Ju_June_2021.pdf"}},
-          metaData: {fileName: "Resume_Youngmin_Ju_June_2021.pdf"}
+          content:   {location: {url: "assets/Youngmin Ju Resume.pdf"}},
+          metaData: {fileName: "Youngmin Ju Resume.pdf"}
        });
     });
  </script>
