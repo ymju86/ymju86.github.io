@@ -98,11 +98,11 @@ author:
   avatar           : "/assets/images/bio-photo.png"
   bio              : "Economist / Data Scientist\n\n
     PhD in Economics @ USC\n\n
-    MS in Economics @ Korea Univ.\n\n
+    MA in Economics @ Korea Univ.\n\n
     BS in Mathmatical Sciences @ KAIST\n\n
-    First Lieutenant @ ROKA"
+    Junior Military Officer @ ROKA"
   location         : "Los Angeles"
-  email            : "ymju86@gmail.com"
+  email            : "contactme@youngminju.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -112,13 +112,13 @@ author:
       url: "https://youngminju.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/youngmin-ju/"
+      url: "https://www.linkedin.com/in/youngminju/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/ymju86"
+      url: "https://github.com/youngminju-phd"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -128,16 +128,16 @@ footer:
   links:
     - label: "Email"
       icon: "fab fa-fw fa-envelope-square"
-      url: mailto:ymju86@gmail.com
+      url: mailto:contactme@youngminju.com
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/ymju86"
+      url: "https://github.com/youngminju-phd"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/youngmin-ju/"
+      url: "https://www.linkedin.com/in/youngminju/"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
