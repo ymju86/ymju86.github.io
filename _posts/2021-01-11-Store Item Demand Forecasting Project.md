@@ -1,7 +1,6 @@
 ---
 title: "Store Item Demand Forecasting Project"
-header:
-  image: "/images/waterfront.jpg"
+
 ---
 
 Data: [kaggle](https://www.kaggle.com/c/demand-forecasting-kernels-only/data?select=train.csv)
