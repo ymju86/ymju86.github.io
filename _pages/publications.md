@@ -32,6 +32,7 @@ In treatment effect analysis, there are many cases where the treatment of intere
 Lee W.H., K.H. Park, **Y.M. Ju**, S.J. Kim and D.S. Lee. (2013), A Study on Scale of Defense Expenditure for Security Menace: A Panel Regression Analysis Approach, Journal of Korea Army Academy at Yeong-cheon, 76(1), 207-242 (in Korean)
 
 - Conducted a government research project, which is a part of a project with a total value of over $40,000, to design robust economic models to estimate optimal national defense R&D expenditure and efficient management
+
 --------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------
 
