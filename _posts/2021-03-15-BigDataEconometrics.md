@@ -1,7 +1,6 @@
 ---
 title: "Big Data Econometrics"
-header:
-  image: "/images/waterfront.jpg"
+
 ---
 Materials for TA session (update: March 15, 2021)  
 
