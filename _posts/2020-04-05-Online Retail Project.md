@@ -1,7 +1,6 @@
 ---
 title: "Online Retail Project"
-header:
-  image: "/images/waterfront.jpg"
+
 ---
 
 Data: [kaggle](https://www.kaggle.com/vijayuv/onlineretail)
