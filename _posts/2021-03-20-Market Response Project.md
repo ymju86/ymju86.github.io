@@ -1,7 +1,6 @@
 ---
 title: "Market Response Project"
-header:
-  image: "/images/waterfront.jpg"
+
 ---
 
 Data: [kaggle](https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html)
