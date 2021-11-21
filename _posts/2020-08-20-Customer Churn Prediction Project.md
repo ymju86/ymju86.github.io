@@ -1,7 +1,6 @@
 ---
 title: "Customer Churn Prediction Project"
-header:
-  image: "/images/waterfront.jpg"
+
 ---
 
 Data: [kaggle](https://www.kaggle.com/blastchar/telco-customer-churn)
