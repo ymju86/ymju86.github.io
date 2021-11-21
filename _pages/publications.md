@@ -19,6 +19,9 @@ header:
 ### Abstract
 In treatment effect analysis, there are many cases where the treatment of interest is ordered (e.g. general-education years or medicine doses) and the control treatment is not zero, but a different type of treatment (a vocational training or a surgery). We develop an approach to find effects of partly ordered treatments, while correcting for possible treatment endogeneity with nearly parametric control functions. We use this control function approach, along with its supplementary version, to estimate effects of military ranks (ordered treatments) on wage relative to non-veteran status (control treatment) with the Wisconsin Longitudinal Study data. In our empirical analysis, the military rank effects differ much: officer has large positive effects, but enlisted ranks have small or no effects.
 
+- Developed a method to find the effects of partly ordered treatments while correcting for possible treatment endogeneity with nearly parametric control functions
+- Estimated effects of military ranks (ordered treatments) on wage relative to non-veteran status (control treatment) and discovered that the military rank effects differ much: officer has large positive effects (17.9%) but enlisted ranks have near-zero effects
+
 --------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------
 
@@ -28,6 +31,7 @@ In treatment effect analysis, there are many cases where the treatment of intere
 
 Lee W.H., K.H. Park, **Y.M. Ju**, S.J. Kim and D.S. Lee. (2013), A Study on Scale of Defense Expenditure for Security Menace: A Panel Regression Analysis Approach, Journal of Korea Army Academy at Yeong-cheon, 76(1), 207-242 (in Korean)
 
+- Conducted a government research project, which is a part of a project with a total value of over $40,000, to design robust economic models to estimate optimal national defense R&D expenditure and efficient management
 --------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------
 
@@ -36,26 +40,25 @@ Lee W.H., K.H. Park, **Y.M. Ju**, S.J. Kim and D.S. Lee. (2013), A Study on Scal
 --------------------------------------------------------------------------------------
 
 (2021) Affirmative Action in Korea - Regression Discontinuity with Multiple Assignment Variables
-- Developed identification and estimation of an extended version of regression discontinuity design that uses more than one assignment variable
-- Analyzed the effect of the Affirmative Action in Korea on the female employment rate in the private sector
+- Developed an identification of a fuzzy regression discontinuity design (RDD) with multiple assignment variables to analyze the effect of Affirmative Action in Korea on female employment rate in the private sector
+- Discovered that while the overall policy has no effect, but a partial effect (company size) increases female employment rate by 5% points
 
 --------------------------------------------------------------------------------------
 
 (2021) Store Item Demand Forecasting Project, [kaggle store item demand data](https://github.com/ymju86/Store_Item_Demand_Forecasting_Project)
-- Used Keras (TensorFlow) to build a Recurrent Neural Net (RNN) with Long Short-Term Memory (LSTM) to predict 3 months of item sales at different stores.
-- Built baseline sales predictions to help with cash flow management, business planning and strategy.
+- Implemented Keras (TensorFlow) to deploy a Recurrent Neural Net (RNN) with Long Short-Term Memory (LSTM) to predict 3 months of item sales at different stores to build baseline sales predictions to help with cash flow management, business planning and strategy
+- Reduced error rate attained by LSTM to 86% of ARIMA’s error rate
  
 --------------------------------------------------------------------------------------
 
 (2020) Customer Churn Prediction Project, [kaggle customer churn data](https://github.com/ymju86/Customer_Churn_Prediction_Project)
-- Developed a Customer Churn Prediction Model: Investigating how the features affect Retention by Logistic Regression, Building a multi-classification model with XGBoost
-- Found which customers are likely to churn and which features have the most impact on a customer leaving
+- Identified the customers most likely to churn and the features with the greatest impact on churn by building a multi-classification model with XGBoost and investigating features with logistic regression
+- Confirmed that XGBoost outperformed the rest of the tested algorithms with an Area Under Curve (AUC) value of 93.3% (GBM 90.89%, Random Forest 87.76%, Decision Trees 83%)
 
 --------------------------------------------------------------------------------------
 
 (2020) Online Retail Project, [kaggle online retail data](https://github.com/ymju86/Online_Retail_Project)
-- Segmented and cleaned business performance metrics: Monthly Revenue, Activation Rate, Monthly Retention Rate, Churn Rate
-- Conducted Life Time Value (LTV) methods and increased accuracy of a multi-classification model from 76.5% to 84% with XGBoost
+- Segmented and cleaned business performance metrics such as monthly revenue, activation rate, monthly retention rate, and churn rate and conducted Lifetime Value (LTV) methods, increasing accuracy of a multi-classification model from 76.5% to 84%
  
 --------------------------------------------------------------------------------------
 
