@@ -12,8 +12,7 @@ popular: true
 toc: true
 toc_sticky: true
 toc_label: Contents
-header:
-  image: "/images/waterfront.jpg"
+
 ---
 
 --------------------------------------------------------------------------------------
