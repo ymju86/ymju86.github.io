@@ -96,11 +96,10 @@ analytics:
 author:
   name             : "Youngmin Ju"
   avatar           : "/assets/images/bio-photo.png"
-  bio              : "Data Scientist / Economist \n\n
-    PhD in Economics @ USC\n\n
-    MA in Economics @ Korea Univ.\n\n
-    BS in Mathmatical Sciences @ KAIST\n\n
-    Junior Military Officer @ ROKA"
+  bio              : "Data Scientist / Economist \n
+    PhD in Economics @ USC\n
+    MA in Economics @ Korea Univ.\n
+    BS in Mathmatical Sciences @ KAIST
   location         : "Los Angeles"
   email            : "contactme@youngminju.com"
   links:
