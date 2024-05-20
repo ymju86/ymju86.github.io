@@ -96,10 +96,11 @@ analytics:
 author:
   name             : "Youngmin Ju"
   avatar           : "/assets/images/bio-photo.png"
-  bio              : "Data Scientist / Economist \n
-    PhD in Economics @ USC\n
-    MA in Economics @ Korea Univ.\n
-    BS in Mathmatical Sciences @ KAIST"
+  bio              : "With over 10 years of experience in data science and economics, 
+  I have developed strong expertise in causal inference, machine learning, experimentation, and statistics. 
+  I have applied these skills to solve real-world problems for various clients, 
+  including market-leading MNCs, global private equity funds, e-commerce companies, and non-profit research organizations." 
+  #"Data Scientist / Economist \n\n PhD in Economics @ USC\n\n MA in Economics @ Korea Univ.\n\n BS in Mathmatical Sciences @ KAIST"
   location         : "Los Angeles"
   email            : "contactme@youngminju.com"
   links:
