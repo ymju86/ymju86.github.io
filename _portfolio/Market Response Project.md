@@ -1,5 +1,5 @@
 ---
-title: "Market Response Model"
+title: "Market Response Project"
 excerpt: "Develop Market Response Model"
 header:
   #image: /assets/images/unsplash-gallery-image-2.jpg
