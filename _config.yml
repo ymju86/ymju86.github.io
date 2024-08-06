@@ -269,6 +269,12 @@ compress_html:
   ignore:
     envs: development
 
+# Collections (Portfolio)
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
 
 # Defaults
 defaults:
@@ -291,5 +297,14 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
 theme: jekyll-theme-cayman
