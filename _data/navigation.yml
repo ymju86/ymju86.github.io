@@ -2,12 +2,12 @@
 main:
   - title: "About"
     url: /about/
-  #- title: "Posts"
-  #  url: /posts/
   - title: "Portfolio"
     url: /portfolio/
   - title: "Publications"
     url: /publications/
+  - title: "Resources"
+    url: /posts/
   - title: "CV"
     url: /assets/Youngmin Ju Resume.pdf
   # - title: "About"
