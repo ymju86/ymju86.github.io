@@ -3,7 +3,7 @@ toc: true
 layout: single
 permalink: /portfolio/
 title: "Portfolio"
-author_profile: true
+author_profile: false
 read_time: true
 comments: true
 share: true
