@@ -307,7 +307,4 @@ defaults:
       author_profile: false
       share: true
 
-# Wide page
-classes: wide
-
 theme: jekyll-theme-cayman
