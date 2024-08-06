@@ -281,7 +281,7 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: posts
+      type: portfolio
     values:
       layout: single
       author_profile: true
