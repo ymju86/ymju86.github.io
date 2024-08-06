@@ -24,7 +24,7 @@ gallery:
 ---
 
 Data: [kaggle](https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html)
-Github: [github](https://github.com/ymju86/Market_Response_Project)
+Github: [github](https://github.com/youngminju-phd/Market_Response_Project)
 
 - pandas, numpy, matplotlib, seaborn, plotly, sklearn, xgboost
 

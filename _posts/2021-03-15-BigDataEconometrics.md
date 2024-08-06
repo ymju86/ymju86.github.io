@@ -4,7 +4,7 @@ title: "Big Data Econometrics"
 ---
 Materials for TA session (update: March 15, 2021)  
 
-Github: [github](https://github.com/ymju86/Big_Data_Econometrics)
+Github: [github](https://github.com/youngminju-phd/Big_Data_Econometrics)
 
 ## Basic & Econometrics
 - Computational Efficiency

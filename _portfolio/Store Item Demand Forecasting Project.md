@@ -24,7 +24,7 @@ gallery:
 ---
 
 Data: [kaggle](https://www.kaggle.com/c/demand-forecasting-kernels-only/data?select=train.csv)
-Github: [github](https://github.com/ymju86/Store_Item_Demand_Forecasting_Project)
+Github: [github](https://github.com/youngminju-phd/Store_Item_Demand_Forecasting_Project)
 
 - pandas, numpy, matplotlib, plotly, sklearn, tensorflow, keras
 

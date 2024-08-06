@@ -4,7 +4,7 @@ title: "Online Retail Project"
 ---
 
 Data: [kaggle](https://www.kaggle.com/vijayuv/onlineretail)
-Github: [github](https://github.com/ymju86/Online_Retail_Project)
+Github: [github](https://github.com/youngminju-phd/Online_Retail_Project)
 
 - pandas, numpy, matplotlib, seaborn, plotly, sklearn(k-means clustering), elbow method, xgboost
 
