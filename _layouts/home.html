@@ -1,87 +1,22 @@
 ---
 layout: default
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            color: #333;
-            text-align: center;
-        }
-        .portfolio {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2em;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        .filters {
-            margin-bottom: 20px;
-        }
-        .filters button {
-            padding: 10px 20px;
-            margin: 0 5px;
-            border: none;
-            background-color: #e0e0e0;
-            color: #333;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .filters button:hover {
-            background-color: #d0d0d0;
-        }
-        .filters .active {
-            background-color: #b0b0b0;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-        .gallery img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="portfolio">
-        <h1>PORTFOLIO</h1>
-        <p>A glimpse of the projects I've been working on</p>
-        <div class="filters">
-            <button class="active">Show all</button>
-            <button>Data mining</button>
-            <button>Dataviz</button>
-            <button>Scientific paper</button>
-            <button>Dashboard</button>
-            <button>Shiny</button>
-        </div>
-        <div class="gallery">
-            <img src="path/to/your/image1.png" alt="Project 1">
-            <img src="path/to/your/image2.png" alt="Project 2">
-            <img src="path/to/your/image3.png" alt="Project 3">
-            <img src="path/to/your/image4.png" alt="Project 4">
-            <img src="path/to/your/image5.png" alt="Project 5">
-            <img src="path/to/your/image6.png" alt="Project 6">
-            <img src="path/to/your/image7.png" alt="Project 7">
-            <img src="path/to/your/image8.png" alt="Project 8">
-            <img src="path/to/your/image9.png" alt="Project 9">
-        </div>
-    </div>
-</body>
-</html>
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
+
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
+
+    <section class="page__content" itemprop="text">
+      {{ content }}
+    </section>
+  </article>
+</div>
