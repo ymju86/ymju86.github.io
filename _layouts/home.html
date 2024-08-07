@@ -1,3 +1,98 @@
 ---
 layout: default
 ---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .explanation_portfolio {
+      font-size: 14px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <section class="bg-light" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Portfolio</h2>
+          <h3 class="section-subheading text-muted">A glimpse of the projects I've been working on</h3>
+          <div id="portfolio-button-container">
+            <button class="btn btn-secondary active" data-portfolio-section="all">Show all</button>
+            <button class="btn btn-secondary" data-portfolio-section="mining">Data mining</button>
+            <button class="btn btn-secondary" data-portfolio-section="dataviz">Dataviz</button>
+            <button class="btn btn-secondary" data-portfolio-section="paper">Scientific paper</button>
+            <button class="btn btn-secondary" data-portfolio-section="dashboard">Dashboard</button>
+            <button class="btn btn-secondary" data-portfolio-section="shiny">Shiny</button>
+          </div>
+          <br>
+        </div>
+      </div>
+      <br><br>
+      <div id="portfolio-items" class="row">
+        <!-- Portfolio items here -->
+        <!-- Add your portfolio items here as provided in your initial code -->
+      </div>
+    </div>
+  </section>
+
+  
+  <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper dashboard shiny">
+    <a class="portfolio-link" data-toggle="modal" href="#ukbGeoApp">
+      <div class="portfolio-hover">
+        <div class="portfolio-hover-content">
+          <p>Genetics in the UK</p>
+          <hr>
+          <p class="explanation_portfolio">Assessing the geographic distribution of genetic traits<br></p>
+        </div>
+      </div>
+      <img class="img-fluid" src="img/portfolio/UKB_geo.png" alt="">
+    </a>
+  </div>
+
+
+  <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper dashboard shiny">
+    <a class="portfolio-link" data-toggle="modal" href="#genMapComp">
+      <div class="portfolio-hover">
+        <div class="portfolio-hover-content">
+          <p>Genetic Map Comparator</p>
+          <hr>
+          <p class="explanation_portfolio">An online tool to compare genetic maps. Published in
+            <i>Bioinformatics</i></p>
+        </div>
+      </div>
+      <img class="img-fluid" src="img/portfolio/GenMapComp.png" alt="">
+    </a>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#portfolio-button-container button').click(function(){
+        var value = $(this).attr('data-portfolio-section');
+        if(value == 'all'){
+          $('.portfolio-item').show('1000');
+        }
+        else{
+          $('.portfolio-item').not('.'+value).hide('3000');
+          $('.portfolio-item').filter('.'+value).show('3000');
+        }
+      });
+
+      $('#portfolio-button-container button').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+      });
+    });
+  </script>
+</body>
+</html>
