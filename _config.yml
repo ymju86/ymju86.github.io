@@ -332,4 +332,8 @@ defaults:
       read_time: true
       share: true
 
+after_footer_scripts:
+  - https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.js
+  - assets/js/mermaid.js
+
 theme: jekyll-theme-cayman
