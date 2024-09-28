@@ -30,20 +30,22 @@ For a sample mean X̄ from a population with mean μ and standard deviation σ:
 Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \sim N(0,1)
 ```
 
-$$Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \sim N(0,1)$$
+```
+$$
+Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \sim N(0,1)
+$$
+```
 
 Where n is the sample size, and Z follows a standard normal distribution as n approaches infinity.
 
 ## Visualizing the Central Limit Theorem
 
 ```mermaid
-graph TD;
-    A["Population Distribution"] --> B["Random Sampling"];
-    B --> C["Sample Means"];
-    C --> D["Sampling Distribution"];
-    D --> E["Normal Distribution"];
-    
-    style E fill:#f9f,stroke:#333,stroke-width:4px;
+graph TD
+    A["Population Distribution"] --> B["Random Sampling"]
+    B --> C["Sample Means"]
+    C --> D["Sampling Distribution"]
+    D --> E["Normal Distribution"]
 ```
 
 This diagram illustrates how the sampling distribution of means approaches a normal distribution, regardless of the original population distribution.
