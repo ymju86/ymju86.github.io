@@ -26,13 +26,13 @@ The Central Limit Theorem is crucial in various fields, including:
 
 For a sample mean X̄ from a population with mean μ and standard deviation σ:
 
+$$
+Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \sim N(0,1)
+$$
+
 ```latex
 Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \sim N(0,1)
 ```
-
-$$
-Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \sim N(0,1)
-$$
 
 Where n is the sample size, and Z follows a standard normal distribution as n approaches infinity.
 
