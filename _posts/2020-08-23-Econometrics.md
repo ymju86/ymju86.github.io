@@ -1,5 +1,5 @@
 ---
-title: "Econometrics"
+title: "Econometrics - Central Limit Theorem (CLT)"
 use_math: true
 ---
 # Central Limit Theorem (CLT)
@@ -12,6 +12,14 @@ The Central Limit Theorem is a fundamental concept in probability theory and sta
 - Sample size should be sufficiently large (typically n ≥ 30)
 - The mean of the sampling distribution equals the population mean
 - The standard error of the mean decreases as sample size increases
+
+## **Applicability of the Central Limit Theorem**
+
+- When the probability distribution of X is normal, the distribution of $\bar{X}$ is exactly normally distributed regardless of sample size
+- When the probability distribution of X is symmetrical, the CLT applies very well to small sample sizes (often as small as 10 ≤ n ≤ 25)
+- When the distribution of X is asymmetrical, the approximation to a normal distribution becomes more accurate as n becomes large
+
+Generally, a good convergence of the sample mean distribution to a normal distribution can be achieved with a sample size of 25 or more.
 
 ## Importance in Statistics and Data Science
 
@@ -29,7 +37,7 @@ For a sample mean X̄ from a population with mean μ and standard deviation σ:
 $$
 Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \sim N(0,1)
 $$
-
+ 
 ```latex
 Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \sim N(0,1)
 ```
