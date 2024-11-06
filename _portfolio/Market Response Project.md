@@ -3,23 +3,23 @@ title: "Market Response Project"
 excerpt: "Develop Market Response Model"
 header:
   #image: /assets/images/unsplash-gallery-image-2.jpg
-  teaser: assets/images/unsplash-gallery-image-2-th.jpg
+  teaser: /assets/projects/DS4.png
 sidebar:
   - title: "Role"
-    image: http://placehold.it/350x250
+    image: /assets/projects/DS4.png
     image_alt: "logo"
     text: "Data Scientist / Economist"
-  #- title: "Responsibilities"
-  #  text: "Develop Market Response Model"
+  - title: "Responsibilities"
+    text: "Develop Market Response Model"
 gallery:
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: assets/images/unsplash-gallery-image-1-th.jpg
+  - #url: /assets/images/unsplash-gallery-image-1.jpg
+    image_path: /assets/projects/CCP.jpg
     alt: "placeholder image 1"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: assets/images/unsplash-gallery-image-2-th.jpg
+  - #url: /assets/images/unsplash-gallery-image-2.jpg
+    image_path: /assets/projects/DS2.png
     alt: "placeholder image 2"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: assets/images/unsplash-gallery-image-3-th.jpg
+  - #url: /assets/images/unsplash-gallery-image-3.jpg
+    image_path: /assets/projects/DS6.png
     alt: "placeholder image 3"
 ---
 

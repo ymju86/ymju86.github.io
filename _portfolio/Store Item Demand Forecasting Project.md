@@ -3,23 +3,23 @@ title: "Store Item Demand Forecasting Project"
 excerpt: "Building the LSTM model & evaluation"
 header:
   #image: /assets/images/unsplash-gallery-image-3.jpg
-  teaser: assets/images/unsplash-gallery-image-3-th.jpg
+  teaser: /assets/projects/DS6.png
 sidebar:
   - title: "Role"
-    image: http://placehold.it/350x250
+    image: /assets/projects/DS6.png
     image_alt: "logo"
     text: "Data Scientist / Economist"
   - title: "Responsibilities"
     text: "Building the LSTM model & evaluation"
 gallery:
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: assets/images/unsplash-gallery-image-1-th.jpg
+  - #url: /assets/images/unsplash-gallery-image-1.jpg
+    image_path: /assets/projects/CCP.jpg
     alt: "placeholder image 1"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: assets/images/unsplash-gallery-image-2-th.jpg
+  - #url: /assets/images/unsplash-gallery-image-2.jpg
+    image_path: /assets/projects/DS4.png
     alt: "placeholder image 2"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: assets/images/unsplash-gallery-image-3-th.jpg
+  - #url: /assets/images/unsplash-gallery-image-3.jpg
+    image_path: /assets/projects/DS2.png
     alt: "placeholder image 3"
 ---
 

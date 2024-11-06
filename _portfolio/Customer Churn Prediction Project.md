@@ -3,23 +3,23 @@ title: "Customer Churn Prediction Project"
 excerpt: "Develop a Churn Prediction model"
 header:
   #image: /assets/images/foo-bar-identity.jpg
-  teaser: /assets/images/foo-bar-identity-th.jpg
+  teaser: /assets/projects/CCP.jpg
 sidebar:
   - title: "Role"
-    image: http://placehold.it/350x250
+    image: /assets/projects/CCP.jpg
     image_alt: "logo"
     text: "Data Scientist / Economist"
   - title: "Responsibilities"
     text: "Develop a Churn Prediction model"
 gallery:
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: assets/images/unsplash-gallery-image-1-th.jpg
+  - #url: /assets/images/unsplash-gallery-image-1.jpg
+    image_path: /assets/projects/DS4.png
     alt: "placeholder image 1"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: assets/images/unsplash-gallery-image-2-th.jpg
+  - #url: /assets/images/unsplash-gallery-image-2.jpg
+    image_path: /assets/projects/DS2.png
     alt: "placeholder image 2"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: assets/images/unsplash-gallery-image-3-th.jpg
+  - #url: /assets/images/unsplash-gallery-image-3.jpg
+    image_path: /assets/projects/DS6.png
     alt: "placeholder image 3"
 ---
 
