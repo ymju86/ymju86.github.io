@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Youngmin Ju"
-  avatar           : "/assets/images/bio-photo.png"
+  avatar           : "/assets/projects/About.jpg"
   bio              : "Data Scientist / Economist \n\n PhD in Economics @ USC\n\n MA in Economics @ Korea Univ.\n\n BS in Mathmatical Sciences @ KAIST"
   location         : "Los Angeles"
   email            : "contactme@youngminju.com"
