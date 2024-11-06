@@ -14,6 +14,7 @@ hidden: true
   #<small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.26.2">Latest release v4.26.2</a></small>
 feature_row:
   - image_path: /assets/projects/About.jpg
+    image_alt: "logo"
     alt: "customizable"
     title: "About"
     excerpt: "I’m a Data Scientist and Economist"
@@ -21,6 +22,7 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/projects/DS5.png
+    image_alt: "logo"
     alt: "fully responsive"
     title: "Portfolio"
     excerpt: "Data Science Projects"
@@ -28,6 +30,7 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/projects/Stat1.jpg
+    image_alt: "logo"
     alt: "100% free"
     title: "Resources"
     excerpt: "TA materials, Statistics, Econometrics"
