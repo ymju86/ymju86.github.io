@@ -119,7 +119,7 @@ plt.show()
 
 
     
-![png](assets/images/output_2_0.png)
+![png](/assets/images/output_2_0.png)
     
 
 
