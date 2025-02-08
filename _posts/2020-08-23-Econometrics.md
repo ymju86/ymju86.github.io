@@ -1,5 +1,8 @@
 ---
 title: "Econometrics - Central Limit Theorem (CLT)"
+toc: true
+toc_sticky: true
+toc_label: Contents
 use_math: true
 ---
 # Central Limit Theorem (CLT)

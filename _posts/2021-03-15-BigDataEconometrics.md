@@ -1,6 +1,8 @@
 ---
 title: "Big Data Econometrics"
-
+toc: true
+toc_sticky: true
+toc_label: Contents
 ---
 Materials for TA session (update: March 15, 2021)  
 

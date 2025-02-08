@@ -78,7 +78,7 @@ mv "${filename}_files" "${root_directory}/assets/images/"
 ```
 
 ## Front matter
-Since `nbconvert` does not change the content of Markdown cells, I can simply define the first cell of the
+Since `nbconvert` does not change the content of Markdown cells, simply define the first cell of the
 notebook to be a Markdown cell and write the YAML front matter there. For example, the first cell of this
 notebook reads
 ```
@@ -95,6 +95,8 @@ badges: true
 these lines as the YAML front matter, and will render the rest of the post based on the settings set here. I'm pretty
 satisfied with this solution: It's easy and intuitive to write, and it doesn't impair the functionality of
 the notebook in any way.
+
+---------------
 
 # Features
 ## Math mode
@@ -118,15 +120,10 @@ ax[1].plot(x, np.cos(x))
 
 plt.show()
 ```
-
-
-    
-![png](/assets/images/output_2_0.png)
-    
-
+   
+![png](/assets/images/output_2_0.png)    
 
 ## Code with output
-
 
 ```python
 for word in ["one", "two", "three"]:
@@ -135,20 +132,4 @@ for word in ["one", "two", "three"]:
 
     one
     two
-    three
-    
-
-# Future work
-There are two small details I might look into some day:
-* I am not completely satisfied by the design of the code output. I would like to make it easier to distinguish
-  between the input of a code cell and its output.
-* I would love to have a way to hide / collapse input or output of code cells like Jupyter Book. I think this
-  feature would allow to write concise posts focusing on the essential parts. It is challenging, though,
-  as it would require to either convert the notebook directly into HTML, or to further process the Markdown
-  file created by `jupyter nbconvert`.
-
-# Conclusion
-I am really happy with this solution. I can write blog posts as Jupyter notebooks, needing only to add a
-first cell with the YAML front matter. I can commit these notebooks to GitHub,
-and the GitHub actions take care of the rest. The results fit perfectly in the Minimal Mistake theme, and
-allow readers to view the original notebook on GitHub or in Colab.
+    three    
