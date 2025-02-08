@@ -2,7 +2,7 @@
 layout: posts
 permalink: /posts/
 title: "Posts"
-author_profile: false
+author_profile: true
 
 ---
 

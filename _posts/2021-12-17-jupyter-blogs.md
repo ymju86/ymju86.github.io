@@ -1,6 +1,8 @@
 ---
 title: "Turning Jupyter notebooks into Jekyll blog posts"
 toc: true
+toc_sticky: true
+toc_label: Contents
 ---
 
 # Getting started

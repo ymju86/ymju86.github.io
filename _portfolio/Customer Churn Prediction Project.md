@@ -2,6 +2,8 @@
 title: "Customer Churn Prediction Project"
 excerpt: "Develop a Churn Prediction model"
 toc: true
+toc_sticky: true
+toc_label: Contents
 header:
   #image: /assets/images/foo-bar-identity.jpg
   teaser: /assets/projects/CCP.jpg
