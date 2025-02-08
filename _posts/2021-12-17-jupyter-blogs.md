@@ -1,9 +1,6 @@
 ---
 title: "Turning Jupyter notebooks into Jekyll blog posts"
 toc: true
-category: "Blogging platform"
-tags: ["Jekyll", "Jupyter", "Minimal Mistakes"]
-badges: true
 ---
 
 One functionality I really want for my blog is to be able to easily turn Jupyter notebooks
