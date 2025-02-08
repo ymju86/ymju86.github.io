@@ -3,11 +3,7 @@ title: "About"
 permalink: /about/
   
 ---
-I'm a senior data scientist who excels at data wrangling, machine learning, exploratory analysis, and data visualizations.
-
-With over 10 years of experience in data science and economics, I have developed strong expertise in causal inference, machine learning, experimentation, and statistics. 
-
-I have applied these skills to solve real-world problems for various clients, including market-leading MNCs, global private equity funds, e-commerce companies, and non-profit research organizations.
+A seasoned Data Scientist/Economist with extensive experience in developing and optimizing data-driven solutions, focusing on machine learning and causal inference. Specialized in enhancing decision-making processes, statistical analysis, and A/B testing, with demonstrated success in improving CRM performance and data processing efficiency. Holds a Ph.D. in Economics and is proficient in Python and SQL.
 
 ## Education
 PhD in Economics @ USC
