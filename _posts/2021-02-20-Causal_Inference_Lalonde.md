@@ -987,11 +987,14 @@ print(causal.estimates)
     
 
 The model provides estimates of three quantities: ATE, ATT and ATC:
-* ATE is the Average Treatment Effect, and this is what we are most interested in. $$ATE = E[Y_1-Y_0] \approx E[Y_1-Y_0 | X]$$
+* ATE is the Average Treatment Effect, and this is what we are most interested in. 
+  $$ATE = E[Y_1-Y_0] \approx E[Y_1-Y_0 | X]$$
  * Here is seems that the average effect of the treatment (job training) was to increase earnings by \$384.
  * However, this effect may just be a random variation, and the treatment may well not have any impact (the null hypothesis). The probability to reject the null hypothesis is 25%. The most common interpretation of this number is that the treatment of job trainings did not have a statistically significant impact on earnings, given the models and data processing we did
-* ATT is the Average Treatment effect of the Treated $$ATT = E[Y_1-Y_0 | D=1]$$
-* ATC is the Average Treatment effect of the Control $$ATC = E[Y_1-Y_0 | D=0]$$
+* ATT is the Average Treatment effect of the Treated 
+  $$ATT = E[Y_1-Y_0 | D=1]$$
+* ATC is the Average Treatment effect of the Control 
+  $$ATC = E[Y_1-Y_0 | D=0]$$
 
 
 ```python
