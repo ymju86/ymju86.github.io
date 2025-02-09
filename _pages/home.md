@@ -3,6 +3,8 @@ title: "Home"
 layout: splash
 permalink: /home/
 hidden: true
+header:
+  image: "/images/header/YM_header_narrow.png"
 #header:
   #overlay_color: "#5e616c"
   #overlay_image: /assets/images/mm-home-page-feature.jpg
