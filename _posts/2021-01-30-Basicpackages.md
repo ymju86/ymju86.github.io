@@ -1,5 +1,5 @@
 ---
-title: "Big Data Econometrics"
+title: "Basic Packages - Python and Jupyter Notebook"
 toc: true
 toc_sticky: true
 toc_label: Contents
@@ -55,7 +55,7 @@ How to install (Run the following in a command prompt)
 
 <code> pip install jupyter_contrib_nbextensions && jupyter contrib nbextension install </code>
 
-![title](NB_ext.png)
+![title](/assets/images/notebooks/BigDataEconometrics/NB_ext.png)
 
 Based on: https://www.geeksforgeeks.org/what-is-the-difference-between-pythons-module-package-and-library/
 
