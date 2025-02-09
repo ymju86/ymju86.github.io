@@ -10,9 +10,10 @@ Materials for TA session (update: March 15, 2021)
 Github: [github](https://github.com/youngminju-phd/Big_Data_Econometrics)
 
 ## Basic & Econometrics
-- Computational Efficiency
-- Cross Validation
-- Feature Engineering
+- [API examples](https://youngminju.com/big%20data%20econometrics/API/)
+- [Computational Efficiency](https://youngminju.com/big%20data%20econometrics/Efficiency/)
+- [Cross Validation](https://youngminju.com/big%20data%20econometrics/CV/)
+- [Feature Engineering](https://youngminju.com/big%20data%20econometrics/FE/)
 - OLS via Stochastic Gradient Descent
 - Misspecified Model
 - ARCH and GARCH Model
