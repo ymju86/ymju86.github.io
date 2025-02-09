@@ -6,8 +6,6 @@ toc_label: Contents
 category: "Causal Inference" 
 ---
 
-# Measuring the Effect of a Training Program on Fulfillment Center Associate Performance
-
 Below is an application of the comprehensive causal inference framework to the question:  
 **"How would you measure the effect of a training program for Fulfillment Center associates on performance?"**
 

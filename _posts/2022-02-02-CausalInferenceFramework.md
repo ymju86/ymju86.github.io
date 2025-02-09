@@ -1,12 +1,11 @@
 ---
-title: "Causal Inference Framework"
+title: "A Comprehensive Causal Inference Framework for Business Questions"
 toc: true
 toc_sticky: true
 toc_label: Contents
 category: "Causal Inference" 
+math: true
 ---
-
-# A Comprehensive Causal Inference Framework for Business Questions
 
 Below is a structured process you can follow to tackle a business question using causal inference methods. This framework builds on standard econometric and causal inference principles while remaining adaptable to the specifics of any business problem.
 
