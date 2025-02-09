@@ -29,11 +29,15 @@ Below is a structured process you can follow to tackle a business question using
 ## 2. Develop a Conceptual Causal Model
 
 - **Frameworks:**  
-  - **Potential Outcomes:** Define \( Y_i(1) \) as the outcome if associate \( i \) receives the training and \( Y_i(0) \) if not.  
+  - **Potential Outcomes:** Define 
+  $$Y_i(1)$$ as the outcome if associate 
+  $$i$$ receives the training and 
+  $$Y_i(0)$$ if not.  
   - **Directed Acyclic Graphs (DAGs):** Sketch relationships between the training program, outcomes, and potential confounders.
 
 - **Key Assumptions:**  
-  - **Ignorability/Conditional Independence:** Given a set of observed covariates \( X \), the treatment assignment is independent of potential outcomes.  
+  - **Ignorability/Conditional Independence:** Given a set of observed covariates 
+  $$X$$, the treatment assignment is independent of potential outcomes.  
   - **Positivity/Overlap:** Every unit has a nonzero chance of receiving either treatment level.  
   - **SUTVA (Stable Unit Treatment Value Assumption):** Each unit’s outcome is unaffected by the treatment status of others.
 
@@ -86,11 +90,12 @@ Depending on data availability and context, choose an identification strategy th
 - **Model Specification:**  
   - For regression-based approaches (e.g., DiD or IV), specify a model such as:
   
-    \[
-    Y_{it} = \alpha + \beta T_i + \delta Post_t + \gamma (T_i \times Post_t) + X_i'\theta + \epsilon_{it}
-    \]
+   $$
+  Y_{it} = \alpha + \beta T_i + \delta \text{Post}_t + \gamma (T_i \times \text{Post}_t) + X_i'\theta + \epsilon_{it}
+  $$
   
-  - For matching methods, first estimate the propensity score \( P(T = 1 \mid X) \) and then match or weight observations accordingly.
+  - For matching methods, first estimate the propensity score 
+  $$ P(T = 1 \mid X) $$ and then match or weight observations accordingly.
   
 - **Advanced Estimation Techniques:**  
   - **Double ML:** Estimate nuisance parameters with flexible machine learning methods and then apply orthogonalization techniques to obtain treatment effect estimates.
