@@ -337,4 +337,4 @@ after_footer_scripts:
   - https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.js
   - assets/js/mermaid.js
 
-theme: minimal-mistakes-jekyll
+theme: jekyll-theme-cayman
