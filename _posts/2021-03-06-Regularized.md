@@ -190,9 +190,3 @@ plt.show()
     
 ![png](/assets/images/notebooks/Machine_Learning/Regularized/output_2_3.png)
     
-
-
-
-```python
-
-```
