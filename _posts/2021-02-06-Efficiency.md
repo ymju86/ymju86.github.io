@@ -99,7 +99,7 @@ plt.ylabel('compute time in ms')
 
 
     
-![png](/assets/images/notebooks/Basic_Econometrics/efficiency/output_5_1.png)
+![png](/assets/images/notebooks/BigDataEconometrics/efficiency/output_5_1.png)
     
 
 

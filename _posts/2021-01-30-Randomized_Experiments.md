@@ -342,7 +342,7 @@ for N, results in estDict.items():
 
 ## 1. Experiments with covariates in the DGP
 
-$y_i = \tau*T_i+\beta'*x_i+e_i$
+$y_i = \tau*T_i+\beta`*x_i+e_i$
 
 
 ```python
