@@ -4,6 +4,7 @@ toc: true
 toc_sticky: true
 toc_label: Contents
 category: "Big Data Econometrics" 
+use_math: true
 ---
 
 Based on: https://rugg2.github.io/, https://github.com/iqDF/Lalonde-Causal-Matching
@@ -667,7 +668,7 @@ As we saw previously, the treated group (trained) is earning $635 less than the 
 **Nor-diff** in this package is Imbens and Rubin's normalized differences (2015) in average covariates, defined as:
 $$\frac{\bar{X}_{k,t}-\bar{X}_{k,c}}{\sqrt{(s_{k,t}^2 + s_{k,c}^2) / 2}}$$
 
-Here $$\bar{X}_{k,t}$ and $s_{k,t}$$ are the sample mean and sample standard deviation of the kth covariate of the treatment group, and $$\bar{X}_{k,c}$ and $s_{k,c}$$ are the analogous statistics for the control group.
+Here $$\bar{X}_{k,t}$$ and $$s_{k,t}$$ are the sample mean and sample standard deviation of the kth covariate of the treatment group, and $$\bar{X}_{k,c}$$ and $$s_{k,c}$$ are the analogous statistics for the control group.
 
 The aim here is to assess the overlap between the control and treatment groups. It can be seen that X2, X4, and X6 (black, married, revenue in 1974) have a large normalized difference, beyond 0.5. This can be interpreted as an imbalance. Concretely, there are way more black people, less married people and lower income in 1974 in the treatment group than in the control group.
 
@@ -795,7 +796,7 @@ Propensity is useful for assessing and improving covariate balance. Indeed a the
 
 $$ E[Y(1) - Y(0) | p(X)] \approx E[Y(1) - Y(0)]$$
 
-This is if $$p(X) = P(D=1 | X)$$, which the CausalInference package estimates for us using a sequence of likelihood ratio tests.
+This is if p(X) = P(D=1 | X), which the CausalInference package estimates for us using a sequence of likelihood ratio tests.
 
 reference: http://laurence-wong.com/software/propensity-score
 
