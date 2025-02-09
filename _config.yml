@@ -225,7 +225,7 @@ kramdown:
 head_scripts:
   - "https://polyfill.io/v3/polyfill.min.js?features=es6"
   - "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-  
+
 # Sass/SCSS
 sass:
   sass_dir: _sass
@@ -340,4 +340,5 @@ after_footer_scripts:
   - https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.js
   - assets/js/mermaid.js
 
-theme: jekyll-theme-cayman
+remote_theme: mmistakes/minimal-mistakes
+#theme: jekyll-theme-cayman
