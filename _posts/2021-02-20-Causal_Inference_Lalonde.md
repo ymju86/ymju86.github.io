@@ -667,7 +667,7 @@ As we saw previously, the treated group (trained) is earning $635 less than the 
 **Nor-diff** in this package is Imbens and Rubin's normalized differences (2015) in average covariates, defined as:
 $$\frac{\bar{X}_{k,t}-\bar{X}_{k,c}}{\sqrt{(s_{k,t}^2 + s_{k,c}^2) / 2}}$$
 
-Here $\bar{X}_{k,t}$ and $s_{k,t}$ are the sample mean and sample standard deviation of the kth covariate of the treatment group, and $\bar{X}_{k,c}$ and $s_{k,c}$ are the analogous statistics for the control group.
+Here $$\bar{X}_{k,t}$ and $s_{k,t}$$ are the sample mean and sample standard deviation of the kth covariate of the treatment group, and $$\bar{X}_{k,c}$ and $s_{k,c}$$ are the analogous statistics for the control group.
 
 The aim here is to assess the overlap between the control and treatment groups. It can be seen that X2, X4, and X6 (black, married, revenue in 1974) have a large normalized difference, beyond 0.5. This can be interpreted as an imbalance. Concretely, there are way more black people, less married people and lower income in 1974 in the treatment group than in the control group.
 
@@ -795,7 +795,7 @@ Propensity is useful for assessing and improving covariate balance. Indeed a the
 
 $$ E[Y(1) - Y(0) | p(X)] \approx E[Y(1) - Y(0)]$$
 
-This is if $p(X) = P(D=1 | X)$, which the CausalInference package estimates for us using a sequence of likelihood ratio tests.
+This is if $$p(X) = P(D=1 | X)$$, which the CausalInference package estimates for us using a sequence of likelihood ratio tests.
 
 reference: http://laurence-wong.com/software/propensity-score
 
@@ -986,11 +986,11 @@ print(causal.estimates)
     
 
 The model provides estimates of three quantities: ATE, ATT and ATC:
-* ATE is the Average Treatment Effect, and this is what we are most interested in. $ATE = E[Y_1-Y_0] \approx E[Y_1-Y_0 | X]$
+* ATE is the Average Treatment Effect, and this is what we are most interested in. $$ATE = E[Y_1-Y_0] \approx E[Y_1-Y_0 | X]$$
  * Here is seems that the average effect of the treatment (job training) was to increase earnings by \$384.
  * However, this effect may just be a random variation, and the treatment may well not have any impact (the null hypothesis). The probability to reject the null hypothesis is 25%. The most common interpretation of this number is that the treatment of job trainings did not have a statistically significant impact on earnings, given the models and data processing we did
-* ATT is the Average Treatment effect of the Treated $ATT = E[Y_1-Y_0 | D=1]$
-* ATC is the Average Treatment effect of the Control $ATC = E[Y_1-Y_0 | D=0]$
+* ATT is the Average Treatment effect of the Treated $$ATT = E[Y_1-Y_0 | D=1]$$
+* ATC is the Average Treatment effect of the Control $$ATC = E[Y_1-Y_0 | D=0]$$
 
 
 ```python
@@ -1539,7 +1539,7 @@ df_matched
 
 
 Assess covariate balance after matching.  For this, compute the absolute standardized differences in means in the covariates after matching (Rosenbaum and Rubin, 1985), $$ASMD_a(x)=\frac{\bar{x}_{t,a}-{\bar{x}_{c,a}}}{\sqrt{\frac{s^{2}_{t,b} + s^{2}_{c,b}}{2}}},$$
-where $\bar{x}_{t,a}$ and $\bar{x}_{c,a}$ are, respectively, the means of covariate $x$ in the treatment and control groups after matching, and $s^{2}_{t,b}$ and $s^{2}_{c,b}$ are, correspongdingly, the sample variances treatment and control groups before matching. 
+where $$\bar{x}_{t,a}$$ and $$\bar{x}_{c,a}$$ are, respectively, the means of covariate $x$ in the treatment and control groups after matching, and $$s^{2}_{t,b}$$ and $$s^{2}_{c,b}$$ are, correspongdingly, the sample variances treatment and control groups before matching. 
 (One reason to use the sample variances before matching rather than the sample variances after matching is to free the comparisons of the means after matching from simultaneous changes in the variances.)
 Comment on covariate balance.
 
