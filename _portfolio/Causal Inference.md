@@ -514,7 +514,7 @@ plot_histogram(
 
 
     
-![png](/_portfolio/image/CI/output_21_0.png)
+![png](/images/portfolio/CI/output_21_0.png)
     
 
 
@@ -532,7 +532,7 @@ plot_scatter(
 
 
     
-![png](/_portfolio/image/CI/output_22_0.png)
+![png](/images/portfolio/CI/output_22_0.png)
     
 
 
@@ -544,7 +544,7 @@ subgroup_analysis(data, hte_effects)
 
 
     
-![png](/_portfolio/image/CI/output_23_0.png)
+![png](/images/portfolio/CI/output_23_0.png)
     
 
 
@@ -563,6 +563,6 @@ plot_scatter(
 
 
     
-![png](/_portfolio/image/CI/output_24_0.png)
+![png](/images/portfolio/CI/output_24_0.png)
     
 
