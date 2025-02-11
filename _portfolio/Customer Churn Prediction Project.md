@@ -14,16 +14,16 @@ sidebar:
     text: "Data Scientist / Economist"
   - title: "Responsibilities"
     text: "Develop a Churn Prediction model"
-gallery:
-  - #url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: /assets/projects/DS4.png
-    alt: "placeholder image 1"
-  - #url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: /assets/projects/DS2.png
-    alt: "placeholder image 2"
-  - #url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: /assets/projects/DS6.png
-    alt: "placeholder image 3"
+# gallery:
+#   - #url: /assets/images/unsplash-gallery-image-1.jpg
+#     image_path: /assets/projects/DS4.png
+#     alt: "placeholder image 1"
+#   - #url: /assets/images/unsplash-gallery-image-2.jpg
+#     image_path: /assets/projects/DS2.png
+#     alt: "placeholder image 2"
+#   - #url: /assets/images/unsplash-gallery-image-3.jpg
+#     image_path: /assets/projects/DS6.png
+#     alt: "placeholder image 3"
 ---
 
 Data: [kaggle](https://www.kaggle.com/blastchar/telco-customer-churn)

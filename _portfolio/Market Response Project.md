@@ -11,16 +11,16 @@ sidebar:
     text: "Data Scientist / Economist"
   - title: "Responsibilities"
     text: "Develop Market Response Model"
-gallery:
-  - #url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: /assets/projects/CCP.jpg
-    alt: "placeholder image 1"
-  - #url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: /assets/projects/DS2.png
-    alt: "placeholder image 2"
-  - #url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: /assets/projects/DS6.png
-    alt: "placeholder image 3"
+# gallery:
+#   - #url: /assets/images/unsplash-gallery-image-1.jpg
+#     image_path: /assets/projects/CCP.jpg
+#     alt: "placeholder image 1"
+#   - #url: /assets/images/unsplash-gallery-image-2.jpg
+#     image_path: /assets/projects/DS2.png
+#     alt: "placeholder image 2"
+#   - #url: /assets/images/unsplash-gallery-image-3.jpg
+#     image_path: /assets/projects/DS6.png
+#     alt: "placeholder image 3"
 ---
 
 Data: [kaggle](https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html)
