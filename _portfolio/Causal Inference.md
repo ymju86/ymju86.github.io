@@ -1,6 +1,6 @@
 ---
-title: "Causal Inference Project"
-excerpt: "Causal Inference Process"
+title: "Analyzing Wage Determinants"
+excerpt: "Analyze Wage Determinants"
 toc: true
 toc_sticky: true
 toc_label: Contents
@@ -13,7 +13,7 @@ sidebar:
     image_alt: "logo"
     text: "Data Scientist / Economist"
   - title: "Responsibilities"
-    text: "Develop Causal Inference Process"
+    text: "Analyze Wage Determinants based on Causal Inference Process"
 # gallery:
 #   - #url: /assets/images/unsplash-gallery-image-1.jpg
 #     image_path: /assets/projects/DS4.png
