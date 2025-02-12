@@ -6,10 +6,10 @@ toc_sticky: true
 toc_label: Contents
 header:
   #image: /assets/images/unsplash-gallery-image-2.jpg
-  teaser: /assets/projects/DS4.png
+  teaser: /assets/projects/ML1.png
 sidebar:
   - title: "Role"
-    image: /assets/projects/DS4.png
+    image: /assets/projects/ML1.png
     image_alt: "logo"
     text: "Data Scientist / Economist"
   - title: "Responsibilities"
@@ -26,7 +26,7 @@ sidebar:
 #     alt: "placeholder image 3"
 ---
 
-# Analyzing Wage Determinants with Econometrics and Machine Learning
+# Analyzing Wage Determinants with Econometrics, Machine Learning and Causal Inference
 
 In this notebook, we will:
 
