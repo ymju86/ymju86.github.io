@@ -1,6 +1,6 @@
 ---
 title: "Analyzing Wage Determinants"
-excerpt: "Analyze Wage Determinants"
+excerpt: "OLS, Random Forest, Double Machine Learning, Causal Forest"
 toc: true
 toc_sticky: true
 toc_label: Contents

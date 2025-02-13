@@ -1,6 +1,6 @@
 ---
 title: "Customer Churn Prediction Project"
-excerpt: "Develop a Churn Prediction model"
+excerpt: "EDA, Feature Engineering, Logistic Regression"
 toc: true
 toc_sticky: true
 toc_label: Contents

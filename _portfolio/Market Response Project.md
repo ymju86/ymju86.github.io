@@ -1,6 +1,6 @@
 ---
 title: "Market Response Project"
-excerpt: "Develop Market Response Model"
+excerpt: "EDA, Feature Engineering, Uplift Modeling"
 header:
   #image: /assets/images/unsplash-gallery-image-2.jpg
   teaser: /assets/projects/DS4.png
