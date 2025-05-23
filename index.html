@@ -5,75 +5,504 @@ header:
     # image: "/images/header/YM_header_narrow.png"
 ---
 
-<section class="hero" style="text-align: center; padding: 50px 20px; background-color: #f8f9fa;">
-  <h1>Data-Driven Insights for Better Decisions</h1>
-  <p style="font-size: 1.2em; margin-bottom: 30px;">Hello, I'm Youngmin Ju, a Data Scientist and Economist specializing in causal inference, experimentation, and machine learning. I transform complex data into actionable insights that drive business impact.</p>
-  <div>
-    <a href="{{ '/blog/' | relative_url }}" class="btn btn--primary">Read My Blog</a>
-    <a href="{{ '/portfolio/' | relative_url }}" class="btn btn--info">View Portfolio</a>
+<style>
+.hero-section {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: var(--bg-color, #ffffff);
+  color: var(--text-color, #333333);
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--text-color, #1a1a1a);
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  color: var(--text-muted, #6c757d);
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary-custom {
+  background-color: #4285f4;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-primary-custom:hover {
+  background-color: #3367d6;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-secondary-custom {
+  background-color: transparent;
+  color: var(--text-color, #333);
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid var(--border-color, #e0e0e0);
+  transition: all 0.3s;
+}
+
+.btn-secondary-custom:hover {
+  background-color: var(--hover-bg, #f5f5f5);
+  color: var(--text-color, #333);
+  text-decoration: none;
+}
+
+.expertise-section {
+  padding: 80px 20px;
+  background-color: var(--section-bg, #f8f9fa);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: var(--text-color, #1a1a1a);
+}
+
+.expertise-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.expertise-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.expertise-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.expertise-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #4285f4;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.expertise-text h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-color, #1a1a1a);
+}
+
+.expertise-text p {
+  color: var(--text-muted, #6c757d);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.expertise-visual {
+  text-align: center;
+}
+
+.expertise-visual img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.projects-section, .blog-section {
+  padding: 80px 20px;
+  background-color: var(--bg-color, #ffffff);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.view-all-link {
+  color: #4285f4;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.view-all-link:hover {
+  color: #3367d6;
+  text-decoration: none;
+}
+
+.projects-grid, .blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.project-card, .blog-card {
+  background-color: var(--card-bg, #ffffff);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.project-card:hover, .blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(45deg, #4285f4, #34a853);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image.business {
+  background: linear-gradient(45deg, #4285f4, #1a73e8);
+}
+
+.card-image.forecasting {
+  background: linear-gradient(45deg, #8e24aa, #3f51b5);
+}
+
+.card-image.automation {
+  background: linear-gradient(45deg, #00acc1, #0097a7);
+}
+
+.card-image.causality {
+  background: linear-gradient(45deg, #1e3a8a, #3730a3);
+}
+
+.card-image.arch-garch {
+  background: linear-gradient(45deg, #059669, #047857);
+}
+
+.card-image.feature-eng {
+  background: linear-gradient(45deg, #0369a1, #0284c7);
+}
+
+.card-content {
+  padding: 24px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--text-color, #1a1a1a);
+  line-height: 1.4;
+}
+
+.card-description {
+  color: var(--text-muted, #6c757d);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background-color: var(--tag-bg, #f1f3f4);
+  color: var(--tag-text, #5f6368);
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.tag.count {
+  background-color: var(--tag-count-bg, #e8f0fe);
+  color: var(--tag-count-text, #1a73e8);
+}
+
+.blog-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.nav-arrow {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-muted, #6c757d);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.nav-arrow:hover {
+  background-color: var(--hover-bg, #f5f5f5);
+}
+
+/* Dark mode styles */
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --section-bg: #2d2d2d;
+  --text-color: #ffffff;
+  --text-muted: #b0b0b0;
+  --card-bg: #2d2d2d;
+  --border-color: #404040;
+  --hover-bg: #404040;
+  --tag-bg: #404040;
+  --tag-text: #b0b0b0;
+  --tag-count-bg: #1e3a8a;
+  --tag-count-text: #93c5fd;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .expertise-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .projects-grid, .blog-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <h1 class="hero-title">Data-Driven Insights for Better Decisions</h1>
+  <p class="hero-description">Hello, I'm Youngmin Ju, a Data Scientist and Economist specializing in causal inference, experimentation, and machine learning. I transform complex data into actionable insights that drive business impact.</p>
+  <div class="cta-buttons">
+    <a href="{{ '/blog/' | relative_url }}" class="btn-primary-custom">Read My Blog →</a>
+    <a href="{{ '/portfolio/' | relative_url }}" class="btn-secondary-custom">View Portfolio</a>
   </div>
 </section>
 
-<section class="my-expertise" style="padding: 40px 20px; text-align: center;">
-  <h2>My Expertise</h2>
-  <div style="display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 20px;">
-    <div class="expertise-item" style="flex-basis: 30%; margin: 10px; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-      <h3>Causal Inference & Experimentation</h3>
-      <p>Designing and analyzing experiments to uncover causal relationships and inform strategic decisions.</p>
-    </div>
-    <div class="expertise-item" style="flex-basis: 30%; margin: 10px; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-      <h3>Machine Learning & Forecasting</h3>
-      <p>Building predictive models and algorithms to solve complex business problems and optimize operations.</p>
-    </div>
-    <div class="expertise-item" style="flex-basis: 30%; margin: 10px; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-      <h3>Data Engineering & Integration</h3>
-      <p>Designing and implementing data pipelines and systems that transform raw data into valuable business assets.</p>
-    </div>
-  </div>
-</section>
-
-<section class="featured-projects" style="padding: 40px 20px; text-align: center;">
-  <h2>Featured Projects</h2>
-  <div class="projects-grid" style="margin-top: 20px;">
-    {% assign featured_projects = site.portfolio | where_exp:"item", "item.featured == true" | slice: 0, 3 %}
-    {% if featured_projects.size == 0 %}
-      <!-- Fallback to recent projects if no featured ones are set -->
-      {% assign featured_projects = site.portfolio | slice: 0, 3 %}
-    {% endif %}
-    {% for project in featured_projects %}
-      <div class="project-item" style="margin-bottom: 20px; padding: 15px; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-        <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
-        <p>{{ project.excerpt | strip_html | truncatewords: 30 }}</p>
-        <!-- Add tags like the example if project.tags exist -->
-        {% if project.tags %}
-          <p style="font-size: 0.9em; color: #6c757d;">
-            {% for tag in project.tags %}
-              <span style="display: inline-block; background-color: #e9ecef; padding: 2px 8px; margin-right: 5px; border-radius: 4px;">{{ tag }}</span>
-            {% endfor %}
-          </p>
-        {% endif %}
+<!-- My Expertise Section -->
+<section class="expertise-section">
+  <div class="expertise-container">
+    <div class="expertise-content">
+      <h2 class="section-title">My Expertise</h2>
+      
+      <div class="expertise-item">
+        <div class="expertise-icon">
+          <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+            <path d="M7 14l3-3 3 3 6-6M4 6h16v12H4z"/>
+          </svg>
+        </div>
+        <div class="expertise-text">
+          <h3>Causal Inference & Experimentation</h3>
+          <p>Designing and analyzing experiments to uncover causal relationships and inform strategic decisions.</p>
+        </div>
       </div>
-    {% else %}
-      <p>No projects to display yet. Check out the <a href="{{ '/portfolio/' | relative_url }}">Portfolio page</a>.</p>
-    {% endfor %}
-  </div>
-  <a href="{{ '/portfolio/' | relative_url }}" class="btn btn--info" style="margin-top: 20px;">View All Projects</a>
-</section>
-
-<section class="popular-blog-posts" style="padding: 40px 20px; text-align: center;">
-  <h2>Popular Blog Posts</h2>
-  <div class="posts-list" style="margin-top: 20px;">
-    {% for post in site.posts limit:3 %}
-      <div class="post-item" style="margin-bottom: 20px; padding: 15px; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        <p>{{ post.date | date: "%B %d, %Y" }}</p>
-        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      
+      <div class="expertise-item">
+        <div class="expertise-icon">
+          <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        </div>
+        <div class="expertise-text">
+          <h3>Machine Learning & Forecasting</h3>
+          <p>Building predictive models and algorithms to solve complex business problems and optimize operations.</p>
+        </div>
       </div>
-    {% else %}
-      <p>No blog posts to display yet. <a href="{{ '/blog/' | relative_url }}">Read the Blog</a>.</p>
-    {% endfor %}
+      
+      <div class="expertise-item">
+        <div class="expertise-icon">
+          <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/>
+          </svg>
+        </div>
+        <div class="expertise-text">
+          <h3>Data Engineering & Integration</h3>
+          <p>Designing and implementing data pipelines and systems that transform raw data into valuable business assets.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="expertise-visual">
+      <div style="width: 100%; height: 300px; background: linear-gradient(45deg, #f0f0f0 25%, transparent 25%), linear-gradient(-45deg, #f0f0f0 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #f0f0f0 75%), linear-gradient(-45deg, transparent 75%, #f0f0f0 75%); background-size: 20px 20px; background-position: 0 0, 0 10px, 10px -10px, -10px 0px; border-radius: 12px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+        <div style="position: absolute; top: 20px; left: 20px; width: 60px; height: 40px; background: linear-gradient(45deg, #4285f4, #34a853); border-radius: 8px; opacity: 0.8;"></div>
+        <div style="position: absolute; top: 60px; right: 30px; width: 80px; height: 60px; background: linear-gradient(45deg, #ea4335, #fbbc04); border-radius: 50%; opacity: 0.7;"></div>
+        <div style="position: absolute; bottom: 30px; left: 40px; width: 100px; height: 80px; background: linear-gradient(45deg, #34a853, #4285f4); border-radius: 12px; opacity: 0.6;"></div>
+        <svg width="120" height="120" viewBox="0 0 120 120" style="z-index: 1;">
+          <polyline points="10,80 30,60 50,70 70,40 90,50 110,20" fill="none" stroke="#4285f4" stroke-width="3"/>
+          <polyline points="10,90 30,75 50,85 70,65 90,70 110,50" fill="none" stroke="#34a853" stroke-width="3"/>
+          <circle cx="30" cy="60" r="4" fill="#4285f4"/>
+          <circle cx="50" cy="70" r="4" fill="#4285f4"/>
+          <circle cx="70" cy="40" r="4" fill="#4285f4"/>
+          <circle cx="90" cy="50" r="4" fill="#4285f4"/>
+        </svg>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- Note: Inline styles are used for brevity. For a production site, these should be in a CSS file. -->
-<!-- The Minimal Mistakes theme classes like `btn btn--primary` are used for buttons. -->
+<!-- Featured Projects Section -->
+<section class="projects-section">
+  <div class="section-header">
+    <h2 class="section-title">Featured Projects</h2>
+    <a href="{{ '/portfolio/' | relative_url }}" class="view-all-link">View All Projects →</a>
+  </div>
+  
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="card-image business"></div>
+      <div class="card-content">
+        <h3 class="card-title">Business Decision Solutions for E-commerce</h3>
+        <p class="card-description">Integrated data platform for e-commerce decision-making, reducing decision time by 30% through advanced analytics.</p>
+        <div class="card-tags">
+          <span class="tag">Data Integration</span>
+          <span class="tag">Business Intelligence</span>
+          <span class="tag">ETL</span>
+          <span class="tag count">+3</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <div class="card-image forecasting"></div>
+      <div class="card-content">
+        <h3 class="card-title">Demand Forecasting for Inventory Optimization</h3>
+        <p class="card-description">Machine learning models for accurate demand prediction, reducing excess inventory costs by 15-20%.</p>
+        <div class="card-tags">
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Time Series Analysis</span>
+          <span class="tag">Forecasting</span>
+          <span class="tag count">+3</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <div class="card-image automation"></div>
+      <div class="card-content">
+        <h3 class="card-title">Automated Data Cleansing Pipeline</h3>
+        <p class="card-description">Automated data processing system that reduced manual report generation time by 80%.</p>
+        <div class="card-tags">
+          <span class="tag">Data Engineering</span>
+          <span class="tag">ETL</span>
+          <span class="tag">Automation</span>
+          <span class="tag count">+3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Popular Blog Posts Section -->
+<section class="blog-section">
+  <div class="blog-navigation">
+    <h2 class="section-title">Popular Blog Posts</h2>
+    <div>
+      <button class="nav-arrow" onclick="scrollBlogPosts(-1)">‹</button>
+      <button class="nav-arrow" onclick="scrollBlogPosts(1)">›</button>
+    </div>
+  </div>
+  
+  <div class="blog-grid" id="blogGrid">
+    <div class="blog-card">
+      <div class="card-image causality"></div>
+      <div class="card-content">
+        <h3 class="card-title">A resource list for causality in statistics, data...</h3>
+        <p class="card-description">A comprehensive collection of resources for studying causality in statistics and data science, including books, papers, and tools.</p>
+      </div>
+    </div>
+    
+    <div class="blog-card">
+      <div class="card-image arch-garch"></div>
+      <div class="card-content">
+        <h3 class="card-title">ARCH and GARCH Modeling for Time Series...</h3>
+        <p class="card-description">Learn about ARCH and GARCH models for analyzing and forecasting time series data with heteroskedasticity.</p>
+      </div>
+    </div>
+    
+    <div class="blog-card">
+      <div class="card-image feature-eng"></div>
+      <div class="card-content">
+        <h3 class="card-title">Feature Engineering and Cross-Validation for...</h3>
+        <p class="card-description">A comprehensive guide to feature engineering and cross-validation techniques for predicting online shopper behavior.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// Dark mode toggle functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const themeToggle = document.querySelector('[data-toggle-theme]');
+  const html = document.documentElement;
+  
+  // Check for saved theme preference or default to light mode
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  html.setAttribute('data-theme', currentTheme);
+  
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function() {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+  }
+});
+
+// Blog posts navigation
+function scrollBlogPosts(direction) {
+  const blogGrid = document.getElementById('blogGrid');
+  const scrollAmount = 350;
+  
+  if (direction === -1) {
+    blogGrid.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  } else {
+    blogGrid.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
+}
+</script>

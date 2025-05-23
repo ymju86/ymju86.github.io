@@ -1,21 +1,241 @@
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <div class="footer-logo">
+        <div class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6 2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2z"/>
+            <path d="M8 8h8M8 12h8M8 16h4" stroke="white" stroke-width="1" fill="none"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Youngmin Ju | Data Scientist</h3>
+          <p>Transforming complex data into actionable insights to solve business problems and drive decision-making.</p>
+        </div>
+      </div>
+      
+      <div class="social-links">
+        <a href="https://github.com/youngminju-phd" target="_blank" rel="noopener noreferrer" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/youngminju/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+    
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        <li><a href="{{ '/portfolio/' | relative_url }}">Portfolio</a></li>
+        <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section">
+      <h4>Contact Information</h4>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>contactme@youngminju.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+1-213-378-8372</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>3855 W 7th St, Los Angeles, CA 90005</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; {{ site.time | date: '%Y' }} Youngmin Ju. All rights reserved.</p>
+  </div>
+</footer>
 
-    {% if site.footer.links %}
-      {% for link in site.footer.links %}
-        {% if link.label and link.url %}
-          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
+<style>
+.site-footer {
+  background-color: var(--footer-bg, #1a1a1a);
+  color: var(--footer-text, #ffffff);
+  padding: 60px 0 20px;
+  margin-top: 80px;
+}
 
-    {% unless site.atom_feed.hide %}
-      <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-    {% endunless %}
-  </ul>
-</div>
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px;
+}
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} <a href="{{ site.copyright_url | default: site.url }}">{{ site.copyright | default: site.title }}</a>. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+.footer-section h3,
+.footer-section h4 {
+  color: var(--footer-heading, #ffffff);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.footer-section h4 {
+  font-size: 1.1rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #4285f4;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: white;
+}
+
+.footer-logo p {
+  color: var(--footer-text-muted, #b0b0b0);
+  line-height: 1.6;
+  margin: 8px 0 0 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--social-bg, #333);
+  color: var(--social-text, #ccc);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #4285f4;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: var(--footer-link, #b0b0b0);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  line-height: 1.6;
+}
+
+.footer-links a:hover {
+  color: var(--footer-link-hover, #ffffff);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--footer-text-muted, #b0b0b0);
+  line-height: 1.6;
+}
+
+.contact-item i {
+  color: #4285f4;
+  width: 16px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--footer-border, #333);
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: var(--footer-text-muted, #888);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Dark mode adjustments */
+[data-theme="light"] .site-footer {
+  --footer-bg: #1a1a1a;
+  --footer-text: #ffffff;
+  --footer-heading: #ffffff;
+  --footer-text-muted: #b0b0b0;
+  --footer-link: #b0b0b0;
+  --footer-link-hover: #ffffff;
+  --footer-border: #333;
+  --social-bg: #333;
+  --social-text: #ccc;
+}
+
+[data-theme="dark"] .site-footer {
+  --footer-bg: #0a0a0a;
+  --footer-text: #ffffff;
+  --footer-heading: #ffffff;
+  --footer-text-muted: #999;
+  --footer-link: #999;
+  --footer-link-hover: #ffffff;
+  --footer-border: #222;
+  --social-bg: #222;
+  --social-text: #aaa;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .footer-logo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .site-footer {
+    padding: 40px 0 20px;
+    margin-top: 60px;
+  }
+}
+</style>
