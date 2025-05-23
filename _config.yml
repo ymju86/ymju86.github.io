@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
+remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -195,6 +195,7 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  - data-scientist-website # exclude the reference project folder
 keep_files:
   - .git
   - .svn
@@ -231,6 +232,12 @@ sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
+# Build settings
+incremental: false
+safe: true
+future: false
+unpublished: false
+limit_posts: 0
 
 # Outputting
 permalink: /:categories/:title/
@@ -340,6 +347,5 @@ after_footer_scripts:
   - https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.js
   - assets/js/mermaid.js
 
-remote_theme: mmistakes/minimal-mistakes
 #theme: jekyll-theme-cayman
 #theme: minimal-mistakes-jekyll

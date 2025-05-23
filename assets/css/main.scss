@@ -30,9 +30,10 @@
   --ring: 221.2 83.2% 53.3%;
   --radius: 0.5rem;
   
-  // Color conversions from HSL
+  /* Color conversions from HSL */
   --bg-primary: hsl(var(--background));
   --text-primary: hsl(var(--foreground));
+  --text-secondary: hsl(215.4 16.3% 56.9%);
   --bg-card: hsl(var(--card));
   --text-card: hsl(var(--card-foreground));
   --bg-muted: hsl(var(--muted));
@@ -42,6 +43,7 @@
   --color-secondary: hsl(var(--secondary));
   --color-secondary-fg: hsl(var(--secondary-foreground));
   --color-border: hsl(var(--border));
+  --surface: hsl(var(--card));
 }
 
 .dark {
@@ -64,6 +66,21 @@
   --border: 217.2 32.6% 17.5%;
   --input: 217.2 32.6% 17.5%;
   --ring: 224.3 76.5% 48%;
+  
+  /* Update color conversions for dark mode */
+  --bg-primary: hsl(var(--background));
+  --text-primary: hsl(var(--foreground));
+  --text-secondary: hsl(215 20.2% 65.1%);
+  --bg-card: hsl(var(--card));
+  --text-card: hsl(var(--card-foreground));
+  --bg-muted: hsl(var(--muted));
+  --text-muted: hsl(var(--muted-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-fg: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-fg: hsl(var(--secondary-foreground));
+  --color-border: hsl(var(--border));
+  --surface: hsl(var(--card));
 }
 
 // Global base styles
