@@ -9,13 +9,18 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 // Custom styles for portfolio and posts titles
-.archive__item-title {
+.archive__item-title,
+.entries-grid .archive__item-title,
+.grid__item .archive__item-title {
   a {
     color: #000 !important; // Black color for titles
     text-decoration: none !important; // Remove underline
+    border-bottom: none !important; // Remove any border underline
     
     &:hover {
+      color: #000 !important;
       text-decoration: none !important;
+      border-bottom: none !important;
     }
     
     &:visited,
@@ -23,11 +28,36 @@ search: false
     &:active {
       color: #000 !important;
       text-decoration: none !important;
+      border-bottom: none !important;
     }
   }
 }
 
-// Smaller font size for posts titles specifically
+// Smaller font size for posts titles specifically 
 .entries-grid .archive__item-title {
-  font-size: 1.1em !important; // Reduced by about 2 points from default
+  font-size: 0.9em !important; // Reduced font size for posts
+  
+  a {
+    font-size: 0.9em !important;
+  }
+}
+
+// Additional overrides for grid layouts
+.grid__item h2.archive__item-title a,
+.list__item h2.archive__item-title a {
+  color: #000 !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+// Override any theme link colors in grid/list views
+.page__content .entries-grid a,
+.page__content .grid__item a {
+  color: #000 !important;
+  text-decoration: none !important;
+  
+  &:hover {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
 }
