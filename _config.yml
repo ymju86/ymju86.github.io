@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-# minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise" # Removed as it's theme specific
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise" # Removed as it's theme specific
 
 # Site Settings
 locale                   : "en-US"
@@ -22,12 +22,12 @@ title_separator          : "-"
 subtitle                 : # "Economist | Data Scientist | Ph.D. in Economics" # site tagline that appears below site title in masthead
 name                     : "Youngmin Ju"
 description              : "Transforming complex data into actionable insights to solve business problems and drive decision-making."
-url                      : "https://ymju86.github.io" # Update this if you have a different primary URL
+url                      : "https://youngminju.com/home" # Update this if you have a different primary URL
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ymju86/ymju86.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # "Youngmin Ju" # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "Youngmin Ju" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
@@ -114,9 +114,9 @@ analytics:
 # Site Author
 author:
   name             : "Youngmin Ju"
-  avatar           : # "/assets/images/bio-photo.png" # Removed as it's likely theme-specific for new layout
-  bio              : # "Data Scientist / Economist \\n\\n PhD in Economics @ USC\\n\\n MA in Economics @ Korea Univ.\\n\\n BS in Mathmatical Sciences @ KAIST" # Removed for now
-  location         : # "Los Angeles" # Removed for now
+  avatar           : "/assets/images/bio-photo.png" # Removed as it's likely theme-specific for new layout
+  bio              : "Data Scientist / Economist \\n\\n PhD in Economics @ USC\\n\\n MA in Economics @ Korea Univ.\\n\\n BS in Mathmatical Sciences @ KAIST" # Removed for now
+  location         : "Los Angeles" # Removed for now
   email            : "contactme@youngminju.com"
   links: # This section might be mostly unused by the new layout, but keeping for now
     - label: "Email"
@@ -139,7 +139,7 @@ author:
       # url: "https://instagram.com/"
 
 # GitHub username for footer link
-github_username          : "youngminju-phd"
+github_username          : "Github"
 linkedin_url             : "https://www.linkedin.com/in/youngminju/"
 
 # Site Footer - This section is handled by the new layout directly using site.email, site.github_username etc.

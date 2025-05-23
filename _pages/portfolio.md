@@ -1,14 +1,8 @@
 ---
-layout: default
 title: Portfolio
+layout: collection
 permalink: /portfolio/
+collection: portfolio
+entries_layout: grid
+classes: wide
 ---
-
-## My Portfolio
-
-Content coming soon. Projects will be listed here.
-
-<!-- 
-  You can use Jekyll collections to manage your portfolio items. 
-  Example: loop through site.portfolio 
--->
