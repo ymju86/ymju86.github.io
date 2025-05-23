@@ -1,7 +1,7 @@
 ---
 title: "A resource list for causality in statistics, data science"
 header:
-  teaser: 
+  teaser: /assets/projects/Stat1.jpg
 toc: true
 toc_sticky: true
 toc_label: Contents

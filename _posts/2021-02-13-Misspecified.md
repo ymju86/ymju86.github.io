@@ -1,7 +1,7 @@
 ---
 title: "Basic & Econometrics - Misspecified model - pitfalls"
 header:
-  teaser: 
+  teaser: /assets/projects/DS2.png
 toc: true
 toc_sticky: true
 toc_label: Contents

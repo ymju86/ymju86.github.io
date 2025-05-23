@@ -1,7 +1,7 @@
 ---
 title: "Causal Inference"
 header:
-  teaser: 
+  teaser: /assets/projects/ML1.png
 toc: true
 toc_sticky: true
 toc_label: Contents

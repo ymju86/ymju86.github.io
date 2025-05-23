@@ -1,7 +1,7 @@
 ---
 title: "A Comprehensive Causal Inference Framework for Business Questions"
 header:
-  teaser: 
+  teaser: /assets/projects/DS4.png
 toc: true
 toc_sticky: true
 toc_label: Contents

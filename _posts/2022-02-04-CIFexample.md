@@ -1,7 +1,7 @@
 ---
 title: "Measuring the Effect of a Training Program on Fulfillment Center Associate Performance"
 header:
-  teaser: 
+  teaser: /assets/projects/DS5.png
 toc: true
 toc_sticky: true
 toc_label: Contents
