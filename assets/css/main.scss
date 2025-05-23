@@ -7,3 +7,27 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// Custom styles for portfolio and posts titles
+.archive__item-title {
+  a {
+    color: #000 !important; // Black color for titles
+    text-decoration: none !important; // Remove underline
+    
+    &:hover {
+      text-decoration: none !important;
+    }
+    
+    &:visited,
+    &:focus,
+    &:active {
+      color: #000 !important;
+      text-decoration: none !important;
+    }
+  }
+}
+
+// Smaller font size for posts titles specifically
+.entries-grid .archive__item-title {
+  font-size: 1.1em !important; // Reduced by about 2 points from default
+}
