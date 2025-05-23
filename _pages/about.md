@@ -40,7 +40,7 @@ classes: wide
   font-size: 3.2rem;
   font-weight: 800;
   margin-bottom: 20px;
-  color: #1a202c;
+  color: var(--text-primary);
   letter-spacing: -0.02em;
 }
 
@@ -59,11 +59,12 @@ classes: wide
 .profile-image {
   width: 300px;
   height: 300px;
-  border-radius: 20px;
+  border-radius: calc(var(--radius) * 4);
   object-fit: cover;
   margin-bottom: 30px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
+  border: 1px solid var(--color-border);
 }
 
 .profile-image:hover {
@@ -82,19 +83,20 @@ classes: wide
   justify-content: center;
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: linear-gradient(135deg, var(--color-primary) 0%, hsl(var(--primary) / 0.8) 100%);
+  color: var(--color-primary-fg);
   text-decoration: none;
-  border-radius: 12px;
+  border-radius: calc(var(--radius) * 2);
   font-size: 20px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 15px hsl(var(--primary) / 0.3);
+  border: 1px solid var(--color-border);
 }
 
 .social-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
-  color: white;
+  box-shadow: 0 8px 25px hsl(var(--primary) / 0.4);
+  color: var(--color-primary-fg);
   text-decoration: none;
 }
 
@@ -106,13 +108,13 @@ classes: wide
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 30px;
-  color: #1a202c;
+  color: var(--text-primary);
   letter-spacing: -0.01em;
 }
 
 .content-text {
   font-size: 1.1rem;
-  color: #4a5568;
+  color: var(--text-muted);
   line-height: 1.8;
   margin-bottom: 20px;
 }
@@ -129,21 +131,21 @@ classes: wide
 }
 
 .skill-card {
-  background: white;
+  background: var(--bg-card);
   padding: 30px 25px;
-  border-radius: 16px;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: calc(var(--radius) * 3);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
 .skill-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .skill-card h3 {
-  color: #1a202c;
+  color: var(--text-primary);
   margin-bottom: 20px;
   font-size: 1.2rem;
   font-weight: 600;
@@ -157,7 +159,7 @@ classes: wide
 
 .skill-list li {
   padding: 6px 0;
-  color: #4a5568;
+  color: var(--text-muted);
   font-size: 0.95rem;
   position: relative;
   padding-left: 20px;
@@ -165,7 +167,7 @@ classes: wide
 
 .skill-list li::before {
   content: '•';
-  color: #667eea;
+  color: var(--color-primary);
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -177,21 +179,22 @@ classes: wide
 }
 
 .timeline-item {
-  background: white;
+  background: var(--bg-card);
   padding: 30px;
-  border-radius: 16px;
+  border-radius: calc(var(--radius) * 3);
   margin-bottom: 25px;
   border-left: 4px solid;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--color-border);
   transition: all 0.3s ease;
 }
 
 .timeline-item:hover {
   transform: translateX(5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-.timeline-item.education-1 { border-left-color: #667eea; }
+.timeline-item.education-1 { border-left-color: var(--color-primary); }
 .timeline-item.education-2 { border-left-color: #48bb78; }
 .timeline-item.education-3 { border-left-color: #ed8936; }
 
@@ -203,19 +206,19 @@ classes: wide
 .item-title {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #1a202c;
+  color: var(--text-primary);
   margin-bottom: 8px;
 }
 
 .item-organization {
   font-weight: 600;
-  color: #4a5568;
+  color: var(--text-muted);
   margin-bottom: 8px;
   font-size: 1.05rem;
 }
 
 .item-description {
-  color: #4a5568;
+  color: var(--text-muted);
   line-height: 1.7;
   margin: 0;
   font-size: 1rem;
@@ -229,7 +232,7 @@ classes: wide
 
 .item-details li {
   padding: 4px 0;
-  color: #4a5568;
+  color: var(--text-muted);
   position: relative;
   padding-left: 20px;
   line-height: 1.6;
@@ -237,7 +240,7 @@ classes: wide
 
 .item-details li::before {
   content: '→';
-  color: #667eea;
+  color: var(--color-primary);
   position: absolute;
   left: 0;
   font-weight: bold;
@@ -248,30 +251,30 @@ classes: wide
 }
 
 .publication-item {
-  background: white;
+  background: var(--bg-card);
   padding: 30px;
-  border-radius: 16px;
+  border-radius: calc(var(--radius) * 3);
   margin-bottom: 25px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--color-border);
   transition: all 0.3s ease;
 }
 
 .publication-item:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .publication-title {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #1a202c;
+  color: var(--text-primary);
   margin-bottom: 10px;
   line-height: 1.4;
 }
 
 .publication-venue {
-  color: #667eea;
+  color: var(--color-primary);
   font-style: italic;
   margin-bottom: 15px;
   font-size: 0.95rem;
@@ -279,7 +282,7 @@ classes: wide
 }
 
 .publication-description {
-  color: #4a5568;
+  color: var(--text-muted);
   line-height: 1.7;
   margin-bottom: 20px;
   font-size: 1rem;
@@ -288,20 +291,21 @@ classes: wide
 .publication-btn {
   display: inline-block;
   padding: 10px 20px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: linear-gradient(135deg, var(--color-primary) 0%, hsl(var(--primary) / 0.8) 100%);
+  color: var(--color-primary-fg);
   text-decoration: none;
-  border-radius: 25px;
+  border-radius: calc(var(--radius) * 4);
   font-size: 0.9rem;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 15px hsl(var(--primary) / 0.3);
+  border: none;
 }
 
 .publication-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
-  color: white;
+  box-shadow: 0 8px 25px hsl(var(--primary) / 0.4);
+  color: var(--color-primary-fg);
   text-decoration: none;
 }
 
@@ -353,6 +357,11 @@ classes: wide
 .timeline-item,
 .skill-card,
 .publication-item {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Utility classes */
+.fade-in {
   animation: fadeInUp 0.6s ease-out;
 }
 </style>
