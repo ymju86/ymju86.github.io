@@ -1,153 +1,208 @@
 <footer class="site-footer">
   <div class="footer-container">
-    <div class="footer-section">
-      <div class="footer-logo">
-        <div class="logo-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M6 2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2z"/>
-            <path d="M8 8h8M8 12h8M8 16h4" stroke="currentColor" stroke-width="1" fill="none"/>
+    <div class="footer-content">
+      <!-- Company Info -->
+      <div class="footer-section">
+        <a href="{{ '/' | relative_url }}" class="footer-logo">
+          <svg class="logo-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/>
+            <path d="M8 7h8m-8 4h8m-8 4h4" stroke="currentColor" stroke-width="1" fill="none"/>
           </svg>
-        </div>
-        <div>
-          <h3>Youngmin Ju | Data Scientist</h3>
-          <p>Transforming complex data into actionable insights to solve business problems and drive decision-making.</p>
-        </div>
-      </div>
-      
-      <div class="social-links">
-        <a href="https://github.com/youngminju-phd" target="_blank" rel="noopener noreferrer" title="GitHub">
-          <i class="fab fa-github"></i>
+          <span>Youngmin Ju | Data Scientist</span>
         </a>
-        <a href="https://www.linkedin.com/in/youngminju/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-    </div>
-    
-    <div class="footer-section">
-      <h4>Quick Links</h4>
-      <ul class="footer-links">
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-        <li><a href="{{ '/portfolio/' | relative_url }}">Portfolio</a></li>
-        <li><a href="{{ '/posts/' | relative_url }}">Blog</a></li>
-      </ul>
-    </div>
-    
-    <div class="footer-section">
-      <h4>Contact Information</h4>
-      <div class="contact-info">
-        <div class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <span>contactme@youngminju.com</span>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-phone"></i>
-          <span>+1-213-378-8372</span>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <span>3855 W 7th St, Los Angeles, CA 90005</span>
+        <p class="footer-description">
+          Transforming complex data into actionable insights to solve business problems and drive decision-making.
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/youngminju-phd" target="_blank" rel="noopener noreferrer" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/youngminju/" target="_blank" rel="noopener noreferrer" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
         </div>
       </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h3 class="footer-title">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+          <li><a href="{{ '/portfolio/' | relative_url }}">Portfolio</a></li>
+          <li><a href="{{ '/posts/' | relative_url }}">Blog</a></li>
+          <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="footer-section">
+        <h3 class="footer-title">Contact Information</h3>
+        <ul class="contact-info">
+          <li class="contact-item">
+            <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>contactme@youngminju.com</span>
+          </li>
+          <li class="contact-item">
+            <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>+1-213-378-8372</span>
+          </li>
+          <li class="contact-item">
+            <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>3855 W 7th St, Los Angeles, CA 90005</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Location -->
+      <div class="footer-section">
+        <h3 class="footer-title">Location</h3>
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7837534829834!2d-118.30894448478456!3d34.062194980601644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b8a0a7f7a7a7%3A0x1234567890abcdef!2s3855%20W%207th%20St%2C%20Los%20Angeles%2C%20CA%2090005!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+            width="100%" 
+            height="160" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            class="map-iframe">
+          </iframe>
+        </div>
+      </div>
     </div>
-  </div>
-  
-  <div class="footer-bottom">
-    <p>&copy; {{ site.time | date: '%Y' }} Youngmin Ju. All rights reserved.</p>
+
+    <!-- Newsletter Section -->
+    <div class="newsletter-section">
+      <div class="newsletter-content">
+        <div class="newsletter-info">
+          <h3 class="newsletter-title">Subscribe to Newsletter</h3>
+          <p class="newsletter-description">Stay updated with the latest insights and articles.</p>
+        </div>
+        <div class="newsletter-form">
+          <form class="subscribe-form" id="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; {{ site.time | date: '%Y' }} Youngmin Ju. All rights reserved.</p>
+      </div>
+    </div>
   </div>
 </footer>
 
 <style>
 .site-footer {
   background: #ffffff;
-  color: #6b7280;
-  padding: 80px 0 30px;
-  margin-top: 120px;
   border-top: 1px solid #e5e7eb;
+  padding: 80px 0 0;
+  margin-top: 120px;
 }
 
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.footer-content {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
 }
 
-.footer-section h3,
-.footer-section h4 {
-  color: #374151;
-  margin-bottom: 25px;
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+@media (min-width: 768px) {
+  .footer-content {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 64px;
+  }
 }
 
-.footer-section h3 {
-  font-size: 1.4rem;
-  margin-bottom: 20px;
-  letter-spacing: -0.01em;
-}
-
-.footer-section h4 {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+/* Footer Sections */
+.footer-section {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-logo {
   display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  margin-bottom: 30px;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 600;
+  margin-bottom: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-logo:hover {
+  color: #3b82f6;
+  text-decoration: none;
 }
 
 .logo-icon {
-  width: 48px;
-  height: 48px;
-  background: #f9fafb;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
   color: #6b7280;
-  border: 1px solid #e5e7eb;
+  transition: color 0.3s ease;
 }
 
-.footer-logo p {
+.footer-logo:hover .logo-icon {
+  color: #3b82f6;
+}
+
+.footer-description {
   color: #6b7280;
-  line-height: 1.7;
-  margin: 12px 0 0 0;
-  font-size: 1.05rem;
-  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
 }
 
 .social-links {
   display: flex;
-  gap: 15px;
+  gap: 12px;
 }
 
-.social-links a {
+.social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   background: transparent;
   color: #6b7280;
   border-radius: 8px;
   text-decoration: none;
   transition: all 0.3s ease;
   border: 1px solid #e5e7eb;
-  font-size: 1.1rem;
 }
 
-.social-links a:hover {
+.social-link:hover {
   background: #f3f4f6;
   color: #374151;
+  text-decoration: none;
   transform: translateY(-2px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 20px;
 }
 
 .footer-links {
@@ -157,109 +212,251 @@
 }
 
 .footer-links li {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .footer-links a {
   color: #6b7280;
   text-decoration: none;
-  transition: all 0.3s ease;
-  line-height: 1.6;
-  font-size: 1.05rem;
-  font-weight: 500;
-  position: relative;
-  padding: 8px 12px;
-  border-radius: 6px;
-  margin-left: -12px;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
 }
 
 .footer-links a:hover {
-  color: #374151;
-  background: #f3f4f6;
+  color: #3b82f6;
   text-decoration: none;
 }
 
 .contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .contact-item {
   display: flex;
-  align-items: flex-start;
-  gap: 15px;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
   color: #6b7280;
-  line-height: 1.6;
-  font-size: 1.05rem;
-  transition: all 0.3s ease;
-  padding: 8px 12px;
-  border-radius: 6px;
-  margin-left: -12px;
-}
-
-.contact-item:hover {
-  color: #374151;
-  background: #f3f4f6;
-}
-
-.contact-item i {
-  color: #6b7280;
-  width: 18px;
-  margin-top: 3px;
-  flex-shrink: 0;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
-}
-
-.contact-item:hover i {
-  color: #374151;
-}
-
-.footer-bottom {
-  border-top: 1px solid #e5e7eb;
-  margin-top: 50px;
-  padding-top: 30px;
-  text-align: center;
-}
-
-.footer-bottom p {
-  color: #6b7280;
-  margin: 0;
   font-size: 0.95rem;
-  font-weight: 400;
 }
 
+.contact-icon {
+  color: #6b7280;
+  flex-shrink: 0;
+}
+
+/* Map */
+.map-container {
+  width: 100%;
+  height: 160px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.map-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  border-top: 1px solid #e5e7eb;
+  padding: 40px 0;
+}
+
+.newsletter-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .newsletter-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+  }
+}
+
+.newsletter-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.newsletter-description {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 12px;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: white;
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+}
+
+.newsletter-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.newsletter-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.newsletter-btn:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.copyright p {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Mobile responsiveness */
 @media (max-width: 768px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    gap: 50px;
+  .site-footer {
+    padding: 60px 0 0;
+    margin-top: 80px;
   }
   
-  .footer-logo {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+  .footer-container {
+    padding: 0 16px;
+  }
+  
+  .footer-content {
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .newsletter-content {
     text-align: left;
+  }
+  
+  .subscribe-form {
+    flex-direction: column;
+  }
+  
+  .newsletter-input {
+    margin-bottom: 12px;
   }
   
   .social-links {
     justify-content: flex-start;
   }
-  
-  .site-footer {
-    padding: 60px 0 25px;
-    margin-top: 80px;
-  }
-  
-  .footer-section h3,
-  .footer-section h4 {
-    font-size: 1.2rem;
-  }
-  
-  .contact-item {
-    font-size: 1rem;
-  }
+}
+
+/* Dark mode styles */
+body.dark-mode .site-footer {
+  background: #111827;
+  border-top-color: #374151;
+}
+
+body.dark-mode .footer-logo {
+  color: #f9fafb;
+}
+
+body.dark-mode .footer-logo:hover {
+  color: #60a5fa;
+}
+
+body.dark-mode .footer-logo:hover .logo-icon {
+  color: #60a5fa;
+}
+
+body.dark-mode .footer-description,
+body.dark-mode .contact-item,
+body.dark-mode .footer-links a,
+body.dark-mode .newsletter-description,
+body.dark-mode .copyright p {
+  color: #9ca3af;
+}
+
+body.dark-mode .footer-title,
+body.dark-mode .newsletter-title {
+  color: #f9fafb;
+}
+
+body.dark-mode .footer-links a:hover {
+  color: #60a5fa;
+}
+
+body.dark-mode .social-link {
+  color: #9ca3af;
+  border-color: #374151;
+}
+
+body.dark-mode .social-link:hover {
+  background: #374151;
+  color: #d1d5db;
+}
+
+body.dark-mode .newsletter-section {
+  border-top-color: #374151;
+}
+
+body.dark-mode .newsletter-input {
+  background: #374151;
+  border-color: #4b5563;
+  color: #f9fafb;
+}
+
+body.dark-mode .newsletter-input:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+}
+
+body.dark-mode .newsletter-input::placeholder {
+  color: #9ca3af;
+}
+
+body.dark-mode .copyright {
+  border-top-color: #374151;
+}
+
+body.dark-mode .map-container {
+  border-color: #374151;
+}
+
+body.dark-mode .contact-icon,
+body.dark-mode .logo-icon {
+  color: #9ca3af;
 }
 
 /* Animation */
@@ -285,4 +482,42 @@
 .footer-section:nth-child(3) {
   animation-delay: 0.2s;
 }
+
+.footer-section:nth-child(4) {
+  animation-delay: 0.3s;
+}
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const newsletterForm = document.getElementById('newsletter-form');
+  
+  newsletterForm?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const btn = this.querySelector('.newsletter-btn');
+    const input = this.querySelector('.newsletter-input');
+    
+    // Store original content
+    const originalText = btn.textContent;
+    
+    // Show loading state
+    btn.textContent = 'Subscribing...';
+    btn.disabled = true;
+    
+    // Simulate subscription
+    setTimeout(function() {
+      btn.textContent = 'Subscribed!';
+      btn.style.background = '#10b981';
+      input.value = '';
+      
+      // Reset after 2 seconds
+      setTimeout(function() {
+        btn.textContent = originalText;
+        btn.disabled = false;
+        btn.style.background = '#3b82f6';
+      }, 2000);
+    }, 1000);
+  });
+});
+</script>

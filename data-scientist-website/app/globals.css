@@ -1,0 +1,304 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.5% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Code block styles */
+.code-block-wrapper {
+  @apply relative my-6 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800;
+  background-color: #1e1e1e;
+}
+
+.code-header {
+  @apply flex justify-between items-center px-4 py-2 bg-gray-800 text-gray-300 border-b border-gray-700;
+}
+
+.code-language {
+  @apply text-xs font-mono;
+}
+
+.copy-code-button {
+  @apply p-1 rounded-md bg-gray-700 hover:bg-gray-600 transition-colors;
+}
+
+.code-block {
+  @apply p-4 overflow-x-auto text-sm m-0;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+
+/* Syntax highlighting */
+.syntax-keyword {
+  color: #569cd6;
+  font-weight: bold;
+}
+
+.syntax-string {
+  color: #ce9178;
+}
+
+.syntax-comment {
+  color: #6a9955;
+  font-style: italic;
+}
+
+.syntax-number {
+  color: #b5cea8;
+}
+
+.syntax-function {
+  color: #dcdcaa;
+}
+
+/* Math expression styles */
+.math-block {
+  @apply my-4 py-2 overflow-x-auto;
+  text-align: center;
+}
+
+.math-inline {
+  @apply mx-1;
+}
+
+/* Jupyter notebook specific styles */
+.jp-OutputArea-output {
+  @apply my-2 p-2 bg-gray-100 dark:bg-gray-800 rounded;
+}
+
+.jp-OutputArea-output img {
+  @apply max-w-full h-auto my-2;
+}
+
+.jp-RenderedText {
+  @apply font-mono text-sm;
+}
+
+/* Smooth transitions for dark mode */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Improved typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-medium tracking-tight;
+}
+
+/* Card hover effects */
+.card-hover {
+  @apply transition-all duration-200 hover:shadow-md hover:-translate-y-1;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-muted;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-muted-foreground/30 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-muted-foreground/50;
+}
+
+/* Filter animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+.filter-badge {
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+.filter-badge-exit {
+  animation: fadeOut 0.2s ease-out forwards;
+}
+
+/* Project card animations */
+.project-card {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Tag badge animations */
+.tag-badge {
+  transition: all 0.2s ease;
+}
+
+.tag-badge:hover {
+  transform: scale(1.05);
+}
+
+.tag-badge.active {
+  transform: scale(1.05);
+}
+
+/* Math rendering styles */
+.katex-display {
+  margin: 1rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+:not(pre) > code {
+  @apply bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded text-sm font-mono;
+}
+
+/* Language-specific syntax highlighting */
+.language-python .keyword,
+.language-python .function,
+.language-python .class {
+  @apply text-blue-400;
+}
+
+.language-python .string {
+  @apply text-green-400;
+}
+
+.language-python .number {
+  @apply text-yellow-400;
+}
+
+.language-python .comment {
+  @apply text-gray-500;
+}
+
+/* Prose styling for markdown content */
+.prose h1 {
+  @apply text-3xl font-bold mt-8 mb-4;
+}
+
+.prose h2 {
+  @apply text-2xl font-bold mt-6 mb-3;
+}
+
+.prose h3 {
+  @apply text-xl font-bold mt-5 mb-2;
+}
+
+.prose p {
+  @apply my-4;
+}
+
+.prose ul {
+  @apply list-disc pl-6 my-4;
+}
+
+.prose ol {
+  @apply list-decimal pl-6 my-4;
+}
+
+.prose li {
+  @apply mb-1;
+}
+
+.prose a {
+  @apply text-primary hover:underline;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-gray-300 dark:border-gray-700 pl-4 italic my-4;
+}
+
+/* Table styles for blog posts */
+.prose table {
+  @apply w-full my-6 border-collapse;
+}
+
+.prose table th {
+  @apply bg-muted p-2 text-left font-semibold border;
+}
+
+.prose table td {
+  @apply p-2 border;
+}
+
+.prose table tr:nth-child(even) {
+  @apply bg-muted/50;
+}
