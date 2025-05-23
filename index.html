@@ -1,29 +1,27 @@
 ---
-layout: home
+layout: default
 author_profile: false
-header:
-    # image: "/images/header/YM_header_narrow.png"
 ---
 
 <style>
 .hero-section {
   text-align: center;
   padding: 80px 20px;
-  background-color: var(--bg-color, #ffffff);
-  color: var(--text-color, #333333);
+  background-color: #ffffff;
+  color: #333333;
 }
 
 .hero-title {
   font-size: 3.5rem;
   font-weight: 700;
-  color: var(--text-color, #1a1a1a);
+  color: #1a1a1a;
   margin-bottom: 30px;
   line-height: 1.2;
 }
 
 .hero-description {
   font-size: 1.25rem;
-  color: var(--text-muted, #6c757d);
+  color: #6c757d;
   max-width: 800px;
   margin: 0 auto 40px;
   line-height: 1.6;
@@ -55,31 +53,31 @@ header:
 
 .btn-secondary-custom {
   background-color: transparent;
-  color: var(--text-color, #333);
+  color: #333;
   padding: 12px 24px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
-  border: 2px solid var(--border-color, #e0e0e0);
+  border: 2px solid #e0e0e0;
   transition: all 0.3s;
 }
 
 .btn-secondary-custom:hover {
-  background-color: var(--hover-bg, #f5f5f5);
-  color: var(--text-color, #333);
+  background-color: #f5f5f5;
+  color: #333;
   text-decoration: none;
 }
 
 .expertise-section {
   padding: 80px 20px;
-  background-color: var(--section-bg, #f8f9fa);
+  background-color: #f8f9fa;
 }
 
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 60px;
-  color: var(--text-color, #1a1a1a);
+  color: #1a1a1a;
 }
 
 .expertise-container {
@@ -118,11 +116,11 @@ header:
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 8px;
-  color: var(--text-color, #1a1a1a);
+  color: #1a1a1a;
 }
 
 .expertise-text p {
-  color: var(--text-muted, #6c757d);
+  color: #6c757d;
   line-height: 1.6;
   margin: 0;
 }
@@ -139,7 +137,7 @@ header:
 
 .projects-section, .blog-section {
   padding: 80px 20px;
-  background-color: var(--bg-color, #ffffff);
+  background-color: #ffffff;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -172,12 +170,12 @@ header:
 }
 
 .project-card, .blog-card {
-  background-color: var(--card-bg, #ffffff);
+  background-color: #ffffff;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
-  border: 1px solid var(--border-color, #e0e0e0);
+  border: 1px solid #e0e0e0;
 }
 
 .project-card:hover, .blog-card:hover {
@@ -225,12 +223,12 @@ header:
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 12px;
-  color: var(--text-color, #1a1a1a);
+  color: #1a1a1a;
   line-height: 1.4;
 }
 
 .card-description {
-  color: var(--text-muted, #6c757d);
+  color: #6c757d;
   line-height: 1.6;
   margin-bottom: 16px;
 }
@@ -242,8 +240,8 @@ header:
 }
 
 .tag {
-  background-color: var(--tag-bg, #f1f3f4);
-  color: var(--tag-text, #5f6368);
+  background-color: #f1f3f4;
+  color: #5f6368;
   padding: 4px 12px;
   border-radius: 16px;
   font-size: 0.875rem;
@@ -251,8 +249,8 @@ header:
 }
 
 .tag.count {
-  background-color: var(--tag-count-bg, #e8f0fe);
-  color: var(--tag-count-text, #1a73e8);
+  background-color: #e8f0fe;
+  color: #1a73e8;
 }
 
 .blog-navigation {
@@ -266,7 +264,7 @@ header:
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: var(--text-muted, #6c757d);
+  color: #6c757d;
   cursor: pointer;
   padding: 8px;
   border-radius: 50%;
@@ -274,22 +272,7 @@ header:
 }
 
 .nav-arrow:hover {
-  background-color: var(--hover-bg, #f5f5f5);
-}
-
-/* Dark mode styles */
-[data-theme="dark"] {
-  --bg-color: #1a1a1a;
-  --section-bg: #2d2d2d;
-  --text-color: #ffffff;
-  --text-muted: #b0b0b0;
-  --card-bg: #2d2d2d;
-  --border-color: #404040;
-  --hover-bg: #404040;
-  --tag-bg: #404040;
-  --tag-text: #b0b0b0;
-  --tag-count-bg: #1e3a8a;
-  --tag-count-text: #93c5fd;
+  background-color: #f5f5f5;
 }
 
 @media (max-width: 768px) {
@@ -474,26 +457,6 @@ header:
 </section>
 
 <script>
-// Dark mode toggle functionality
-document.addEventListener('DOMContentLoaded', function() {
-  const themeToggle = document.querySelector('[data-toggle-theme]');
-  const html = document.documentElement;
-  
-  // Check for saved theme preference or default to light mode
-  const currentTheme = localStorage.getItem('theme') || 'light';
-  html.setAttribute('data-theme', currentTheme);
-  
-  if (themeToggle) {
-    themeToggle.addEventListener('click', function() {
-      const currentTheme = html.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      
-      html.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-    });
-  }
-});
-
 // Blog posts navigation
 function scrollBlogPosts(direction) {
   const blogGrid = document.getElementById('blogGrid');

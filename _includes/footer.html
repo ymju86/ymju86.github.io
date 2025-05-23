@@ -31,7 +31,6 @@
         <li><a href="{{ '/about/' | relative_url }}">About</a></li>
         <li><a href="{{ '/portfolio/' | relative_url }}">Portfolio</a></li>
         <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
-        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
       </ul>
     </div>
     
@@ -61,8 +60,8 @@
 
 <style>
 .site-footer {
-  background-color: var(--footer-bg, #1a1a1a);
-  color: var(--footer-text, #ffffff);
+  background-color: #1a1a1a;
+  color: #ffffff;
   padding: 60px 0 20px;
   margin-top: 80px;
 }
@@ -78,7 +77,7 @@
 
 .footer-section h3,
 .footer-section h4 {
-  color: var(--footer-heading, #ffffff);
+  color: #ffffff;
   margin-bottom: 20px;
   font-weight: 600;
 }
@@ -112,7 +111,7 @@
 }
 
 .footer-logo p {
-  color: var(--footer-text-muted, #b0b0b0);
+  color: #b0b0b0;
   line-height: 1.6;
   margin: 8px 0 0 0;
 }
@@ -128,8 +127,8 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: var(--social-bg, #333);
-  color: var(--social-text, #ccc);
+  background-color: #333;
+  color: #ccc;
   border-radius: 8px;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -152,14 +151,14 @@
 }
 
 .footer-links a {
-  color: var(--footer-link, #b0b0b0);
+  color: #b0b0b0;
   text-decoration: none;
   transition: color 0.3s ease;
   line-height: 1.6;
 }
 
 .footer-links a:hover {
-  color: var(--footer-link-hover, #ffffff);
+  color: #ffffff;
 }
 
 .contact-info {
@@ -172,7 +171,7 @@
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  color: var(--footer-text-muted, #b0b0b0);
+  color: #b0b0b0;
   line-height: 1.6;
 }
 
@@ -184,41 +183,16 @@
 }
 
 .footer-bottom {
-  border-top: 1px solid var(--footer-border, #333);
+  border-top: 1px solid #333;
   margin-top: 40px;
   padding-top: 20px;
   text-align: center;
 }
 
 .footer-bottom p {
-  color: var(--footer-text-muted, #888);
+  color: #888;
   margin: 0;
   font-size: 0.9rem;
-}
-
-/* Dark mode adjustments */
-[data-theme="light"] .site-footer {
-  --footer-bg: #1a1a1a;
-  --footer-text: #ffffff;
-  --footer-heading: #ffffff;
-  --footer-text-muted: #b0b0b0;
-  --footer-link: #b0b0b0;
-  --footer-link-hover: #ffffff;
-  --footer-border: #333;
-  --social-bg: #333;
-  --social-text: #ccc;
-}
-
-[data-theme="dark"] .site-footer {
-  --footer-bg: #0a0a0a;
-  --footer-text: #ffffff;
-  --footer-heading: #ffffff;
-  --footer-text-muted: #999;
-  --footer-link: #999;
-  --footer-link-hover: #ffffff;
-  --footer-border: #222;
-  --social-bg: #222;
-  --social-text: #aaa;
 }
 
 @media (max-width: 768px) {
