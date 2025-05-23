@@ -1,0 +1,22 @@
+# main links
+main:
+  - title: "Home"
+    url: /home/
+  - title: "About"
+    url: /about/
+  - title: "Portfolio"
+    url: /portfolio/
+  - title: "Publications"
+    url: /publications/
+  - title: "Resources"
+    url: /posts/
+  - title: "CV"
+    url: /assets/Youngmin Ju Resume.pdf
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
