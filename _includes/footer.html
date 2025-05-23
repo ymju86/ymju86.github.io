@@ -60,11 +60,11 @@
 
 <style>
 .site-footer {
-  background: var(--bg-primary);
-  color: var(--text-primary);
+  background: #ffffff;
+  color: #6b7280;
   padding: 80px 0 30px;
   margin-top: 120px;
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid #e5e7eb;
 }
 
 .footer-container {
@@ -78,7 +78,7 @@
 
 .footer-section h3,
 .footer-section h4 {
-  color: var(--text-primary);
+  color: #374151;
   margin-bottom: 25px;
   font-weight: 700;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -105,18 +105,18 @@
 .logo-icon {
   width: 48px;
   height: 48px;
-  background: var(--bg-muted);
-  border-radius: calc(var(--radius) * 2);
+  background: #f9fafb;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: var(--color-primary);
-  border: 1px solid var(--color-border);
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
 }
 
 .footer-logo p {
-  color: var(--text-muted);
+  color: #6b7280;
   line-height: 1.7;
   margin: 12px 0 0 0;
   font-size: 1.05rem;
@@ -134,20 +134,20 @@
   justify-content: center;
   width: 48px;
   height: 48px;
-  background: var(--bg-muted);
-  color: var(--text-muted);
-  border-radius: calc(var(--radius) * 2);
+  background: transparent;
+  color: #6b7280;
+  border-radius: 8px;
   text-decoration: none;
   transition: all 0.3s ease;
-  border: 1px solid var(--color-border);
+  border: 1px solid #e5e7eb;
   font-size: 1.1rem;
 }
 
 .social-links a:hover {
-  background: var(--color-primary);
-  color: var(--color-primary-fg);
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px hsl(var(--primary) / 0.3);
+  background: #f3f4f6;
+  color: #374151;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .footer-links {
@@ -161,33 +161,22 @@
 }
 
 .footer-links a {
-  color: var(--text-muted);
+  color: #6b7280;
   text-decoration: none;
   transition: all 0.3s ease;
   line-height: 1.6;
   font-size: 1.05rem;
   font-weight: 500;
   position: relative;
-}
-
-.footer-links a::before {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--color-primary);
-  transition: width 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-left: -12px;
 }
 
 .footer-links a:hover {
-  color: var(--color-primary);
-  transform: translateX(5px);
-}
-
-.footer-links a:hover::before {
-  width: 100%;
+  color: #374151;
+  background: #f3f4f6;
+  text-decoration: none;
 }
 
 .contact-info {
@@ -200,33 +189,42 @@
   display: flex;
   align-items: flex-start;
   gap: 15px;
-  color: var(--text-muted);
+  color: #6b7280;
   line-height: 1.6;
   font-size: 1.05rem;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-left: -12px;
 }
 
 .contact-item:hover {
-  color: var(--color-primary);
+  color: #374151;
+  background: #f3f4f6;
 }
 
 .contact-item i {
-  color: var(--color-primary);
+  color: #6b7280;
   width: 18px;
   margin-top: 3px;
   flex-shrink: 0;
   font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.contact-item:hover i {
+  color: #374151;
 }
 
 .footer-bottom {
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid #e5e7eb;
   margin-top: 50px;
   padding-top: 30px;
   text-align: center;
 }
 
 .footer-bottom p {
-  color: var(--text-muted);
+  color: #6b7280;
   margin: 0;
   font-size: 0.95rem;
   font-weight: 400;
