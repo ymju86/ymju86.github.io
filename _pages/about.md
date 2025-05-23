@@ -1,17 +1,12 @@
 ---
-title: "About"
+layout: default
+title: About
 permalink: /about/
 ---
 
-# About Me
+## About Me
 
-**Youngmin Ju - Data Scientist & Economist**
-
-I'm Youngmin Ju, a seasoned Data Scientist and Economist with extensive experience in developing and optimizing data-driven solutions, focusing on experimentation and causal inference. As the founder of a research-driven organization, I've successfully led cross-functional projects, delivering business impact through data strategy and technical execution.
-
-My expertise lies in enhancing decision-making processes, statistical analysis, and A/B testing, with demonstrated success in improving CRM performance and data processing efficiency. Throughout my career, I've worked with organizations across various industries, helping them leverage data to make informed decisions and drive business growth.
-
-My approach combines rigorous statistical analysis with creative problem-solving, always keeping the end goal in mind: delivering insights that create value and drive positive change.
+Content coming soon.
 
 ---
 
