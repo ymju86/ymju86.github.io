@@ -1,5 +1,7 @@
 ---
 title: "Randomized Experiments"
+header:
+  teaser: /assets/images/notebooks/BigDataEconometrics/output_16_0.png
 toc: true
 toc_sticky: true
 toc_label: Contents

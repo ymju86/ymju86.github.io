@@ -1,5 +1,7 @@
 ---
 title: "Big Data Econometrics"
+header:
+  teaser: /images/covid.png
 toc: true
 toc_sticky: true
 toc_label: Contents

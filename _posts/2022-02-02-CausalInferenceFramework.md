@@ -1,5 +1,7 @@
 ---
 title: "A Comprehensive Causal Inference Framework for Business Questions"
+header:
+  teaser: 
 toc: true
 toc_sticky: true
 toc_label: Contents

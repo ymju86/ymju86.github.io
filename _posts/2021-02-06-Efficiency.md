@@ -1,5 +1,7 @@
 ---
 title: "Basic & Econometrics - Computational efficiency"
+header:
+  teaser: /assets/images/notebooks/BigDataEconometrics/efficiency/output_5_1.png
 toc: true
 toc_sticky: true
 toc_label: Contents

@@ -1,5 +1,7 @@
 ---
 title: "Basic & Econometrics - Misspecified model - pitfalls"
+header:
+  teaser: 
 toc: true
 toc_sticky: true
 toc_label: Contents

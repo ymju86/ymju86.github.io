@@ -1,5 +1,7 @@
 ---
 title: "Causal Inference - Lalonde dataset"
+header:
+  teaser: /assets/images/notebooks/Causal_Inference/output_69_0.png
 toc: true
 toc_sticky: true
 toc_label: Contents

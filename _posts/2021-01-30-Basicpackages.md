@@ -1,5 +1,7 @@
 ---
 title: "Basic Packages - Python and Jupyter Notebook"
+header:
+  teaser: /assets/images/notebooks/BigDataEconometrics/NB_ext.png
 toc: true
 toc_sticky: true
 toc_label: Contents

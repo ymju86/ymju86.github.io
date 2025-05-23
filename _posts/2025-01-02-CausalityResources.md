@@ -1,5 +1,7 @@
 ---
 title: "A resource list for causality in statistics, data science"
+header:
+  teaser: 
 toc: true
 toc_sticky: true
 toc_label: Contents

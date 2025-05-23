@@ -1,5 +1,7 @@
 ---
 title: "Machine Learning - Regularized regression"
+header:
+  teaser: /assets/images/notebooks/Machine_Learning/Regularized/output_0_0.png
 toc: true
 toc_sticky: true
 toc_label: Contents
