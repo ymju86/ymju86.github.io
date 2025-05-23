@@ -35,8 +35,6 @@ Use Keras (TensorFlow) to implement LSTM (Long Short-term Memory)
 
 --------------------------------------------------------------------------------------
 
-{% include gallery caption="This is a sample gallery to go along with this case study." %}
-
 ## Predicting Sales
 
 Time series forecasting is an important area of Machine Learning because there are so many prediction problems that involve a time component. There are many methods in the literature to achieve this like Autoregressive Moving Average (ARMA), Autoregressive Integrated Moving Average (ARIMA), Seasonal Autoregressive Integrated Moving-Average (SARIMA), Vector Autoregression (VAR), and so on.

@@ -28,7 +28,6 @@ Github: [github](https://github.com/youngminju-phd/Market_Response_Project)
 
 - pandas, numpy, matplotlib, seaborn, plotly, sklearn, xgboost
 
-{% include gallery caption="This is a sample gallery to go along with this case study." %}
 
 Market Response Model
 -	Building the uplift formula

@@ -38,8 +38,6 @@ Develop a Churn Prediction model:
 
 ------------------------------------------------------------------------------------------
 
-{% include gallery caption="This is a sample gallery to go along with this case study." %}
-
 ## Churn Prediction
 
 Retention Rate is an indication of how good is your product market fit (PMF). If your PMF is not satisfactory, you should see your customers churning very soon. One of the powerful tools to improve Retention Rate (hence the PMF) is Churn Prediction. By using this technique, you can easily find out who is likely to churn in the given period. In this article, we will use a **Telco dataset** (https://www.kaggle.com/blastchar/telco-customer-churn) and go over the following steps to develop a Churn Prediction model:
