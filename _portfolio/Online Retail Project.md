@@ -23,7 +23,6 @@ sidebar:
 #     alt: "placeholder image 3"
 ---
 
-Data: [kaggle](https://www.kaggle.com/vijayuv/onlineretail)
 Github: [github](https://github.com/youngminju-phd/Online_Retail_Project)
 
 - pandas, numpy, matplotlib, seaborn, plotly, sklearn(k-means clustering), elbow method, xgboost

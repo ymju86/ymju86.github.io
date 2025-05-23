@@ -23,7 +23,6 @@ sidebar:
 #     alt: "placeholder image 3"
 ---
 
-Data: [kaggle](https://www.kaggle.com/c/demand-forecasting-kernels-only/data?select=train.csv)
 Github: [github](https://github.com/youngminju-phd/Store_Item_Demand_Forecasting_Project)
 
 - pandas, numpy, matplotlib, plotly, sklearn, tensorflow, keras

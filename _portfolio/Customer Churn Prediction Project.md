@@ -26,7 +26,6 @@ sidebar:
 #     alt: "placeholder image 3"
 ---
 
-Data: [kaggle](https://www.kaggle.com/blastchar/telco-customer-churn)
 Github: [github](https://github.com/youngminju-phd/Customer_Churn_Prediction_Project)
 
 - pandas, numpy, matplotlib, seaborn, plotly, sklearn, xgboost
