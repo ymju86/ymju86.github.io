@@ -317,6 +317,7 @@ defaults:
       share: true
       related: true
       mathjax: true
+      show_excerpts: false
 
   # _pages
   - scope:
@@ -335,6 +336,7 @@ defaults:
       author_profile: true
       read_time: false
       share: true
+      show_excerpts: false
 
 after_footer_scripts:
   - https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.js
