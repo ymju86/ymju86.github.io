@@ -67,3 +67,8 @@ search: false
 .archive__item .archive__item-excerpt {
   font-size: 0.7em !important; // Reduced font size for portfolio excerpts
 }
+
+// Hide social share buttons
+.page__share {
+  display: none !important;
+}
