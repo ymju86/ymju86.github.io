@@ -22,6 +22,7 @@
             </li>
           {%- endfor -%}
         </ul>
+        <a class="site-nav-toggle" href="#" data-toggle-theme><i class="fas fa-moon" aria-hidden="true"></i><span class="visually-hidden">Toggle Theme</span></a>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>

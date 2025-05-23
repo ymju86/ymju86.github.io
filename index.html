@@ -1,6 +1,79 @@
 ---
 layout: home
-author_profile: true
+author_profile: false
 header:
-    image: "/images/header/YM_header_narrow.png"
+    # image: "/images/header/YM_header_narrow.png"
 ---
+
+<section class="hero" style="text-align: center; padding: 50px 20px; background-color: #f8f9fa;">
+  <h1>Data-Driven Insights for Better Decisions</h1>
+  <p style="font-size: 1.2em; margin-bottom: 30px;">Hello, I'm Youngmin Ju, a Data Scientist and Economist specializing in causal inference, experimentation, and machine learning. I transform complex data into actionable insights that drive business impact.</p>
+  <div>
+    <a href="{{ '/blog/' | relative_url }}" class="btn btn--primary">Read My Blog</a>
+    <a href="{{ '/portfolio/' | relative_url }}" class="btn btn--info">View Portfolio</a>
+  </div>
+</section>
+
+<section class="my-expertise" style="padding: 40px 20px; text-align: center;">
+  <h2>My Expertise</h2>
+  <div style="display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 20px;">
+    <div class="expertise-item" style="flex-basis: 30%; margin: 10px; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+      <h3>Causal Inference & Experimentation</h3>
+      <p>Designing and analyzing experiments to uncover causal relationships and inform strategic decisions.</p>
+    </div>
+    <div class="expertise-item" style="flex-basis: 30%; margin: 10px; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+      <h3>Machine Learning & Forecasting</h3>
+      <p>Building predictive models and algorithms to solve complex business problems and optimize operations.</p>
+    </div>
+    <div class="expertise-item" style="flex-basis: 30%; margin: 10px; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+      <h3>Data Engineering & Integration</h3>
+      <p>Designing and implementing data pipelines and systems that transform raw data into valuable business assets.</p>
+    </div>
+  </div>
+</section>
+
+<section class="featured-projects" style="padding: 40px 20px; text-align: center;">
+  <h2>Featured Projects</h2>
+  <div class="projects-grid" style="margin-top: 20px;">
+    {% assign featured_projects = site.portfolio | where_exp:"item", "item.featured == true" | slice: 0, 3 %}
+    {% if featured_projects.size == 0 %}
+      <!-- Fallback to recent projects if no featured ones are set -->
+      {% assign featured_projects = site.portfolio | slice: 0, 3 %}
+    {% endif %}
+    {% for project in featured_projects %}
+      <div class="project-item" style="margin-bottom: 20px; padding: 15px; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+        <p>{{ project.excerpt | strip_html | truncatewords: 30 }}</p>
+        <!-- Add tags like the example if project.tags exist -->
+        {% if project.tags %}
+          <p style="font-size: 0.9em; color: #6c757d;">
+            {% for tag in project.tags %}
+              <span style="display: inline-block; background-color: #e9ecef; padding: 2px 8px; margin-right: 5px; border-radius: 4px;">{{ tag }}</span>
+            {% endfor %}
+          </p>
+        {% endif %}
+      </div>
+    {% else %}
+      <p>No projects to display yet. Check out the <a href="{{ '/portfolio/' | relative_url }}">Portfolio page</a>.</p>
+    {% endfor %}
+  </div>
+  <a href="{{ '/portfolio/' | relative_url }}" class="btn btn--info" style="margin-top: 20px;">View All Projects</a>
+</section>
+
+<section class="popular-blog-posts" style="padding: 40px 20px; text-align: center;">
+  <h2>Popular Blog Posts</h2>
+  <div class="posts-list" style="margin-top: 20px;">
+    {% for post in site.posts limit:3 %}
+      <div class="post-item" style="margin-bottom: 20px; padding: 15px; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.date | date: "%B %d, %Y" }}</p>
+        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      </div>
+    {% else %}
+      <p>No blog posts to display yet. <a href="{{ '/blog/' | relative_url }}">Read the Blog</a>.</p>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Note: Inline styles are used for brevity. For a production site, these should be in a CSS file. -->
+<!-- The Minimal Mistakes theme classes like `btn btn--primary` are used for buttons. -->
