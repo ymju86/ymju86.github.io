@@ -1,12 +1,29 @@
 ---
 title: "A Comprehensive Causal Inference Framework for Business Questions"
-header:
-  teaser: /assets/projects/DS4.png
+excerpt: "Structured process to tackle a business question using causal inference methods"
 toc: true
 toc_sticky: true
 toc_label: Contents
-category: "Causal Inference" 
-math: true
+header:
+  #image: /assets/images/unsplash-gallery-image-2.jpg
+  teaser: /assets/projects/DS4.png
+sidebar:
+  - title: "Role"
+    image: /assets/projects/DS4.png
+    image_alt: "logo"
+    text: "Data Scientist / Economist"
+  - title: "Responsibilities"
+    text: "Develop a Comprehensive Causal Inference Framework"
+# gallery:
+#   - #url: /assets/images/unsplash-gallery-image-1.jpg
+#     image_path: /assets/projects/DS4.png
+#     alt: "placeholder image 1"
+#   - #url: /assets/images/unsplash-gallery-image-2.jpg
+#     image_path: /assets/projects/DS2.png
+#     alt: "placeholder image 2"
+#   - #url: /assets/images/unsplash-gallery-image-3.jpg
+#     image_path: /assets/projects/DS6.png
+#     alt: "placeholder image 3"
 ---
 
 Below is a structured process you can follow to tackle a business question using causal inference methods. This framework builds on standard econometric and causal inference principles while remaining adaptable to the specifics of any business problem.
