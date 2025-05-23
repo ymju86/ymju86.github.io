@@ -6,12 +6,12 @@ main:
     url: /about/
   - title: "Portfolio"
     url: /portfolio/
-  - title: "Publications"
-    url: /publications/
-  - title: "Resources"
+#  - title: "Publications"
+#    url: /publications/
+  - title: "Blog"
     url: /posts/
-  - title: "CV"
-    url: /assets/Youngmin Ju Resume.pdf
+#  - title: "CV"
+#    url: /assets/Youngmin Ju Resume.pdf
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
