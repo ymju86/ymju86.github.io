@@ -22,7 +22,7 @@ title_separator          : "-"
 subtitle                 : # "Economist | Data Scientist | Ph.D. in Economics" # site tagline that appears below site title in masthead
 name                     : "Youngmin Ju"
 description              : 
-url                      : "ymju86.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://www.youngminju.com/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ymju86/ymju86.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -117,7 +117,7 @@ author:
   avatar           : "/assets/images/bio-photo.png"
   bio              : "Data Scientist / Economist \n\n PhD in Economics @ USC\n\n MA in Economics @ Korea Univ.\n\n BS in Mathmatical Sciences @ KAIST"
   location         : "Los Angeles"
-  email            : "contactme@youngminju.com"
+  email            : "youngmin.ju.biz@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -143,7 +143,7 @@ footer:
   links:
     - label: "Email"
       icon: "fab fa-fw fa-envelope-square"
-      url: mailto:contactme@youngminju.com
+      url: mailto:youngmin.ju.biz@gmail.com
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
